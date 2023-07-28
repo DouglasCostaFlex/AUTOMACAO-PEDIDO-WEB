@@ -1,0 +1,70 @@
+ na aba "Controle de credito" na tela 107
+ 
+ titulo cadastro: Situação do crédito
+					título grid: Situação do crédito
+					 componente: TCombobox
+						valores: 0 - Bloqueado; 
+						1 - Somente venda a vista; 
+						2 - Verificar crédito; 
+						3 - Crédito ilimitado; 
+						4 - Liberado apenas para próxima compra
+						  ajuda: Define a situação do crédito do cliente para compras. A opção verificar crédito define que o sistema deve verificar limites de crédito por forma de pagamento e a situação do cliente quanto à inadimplência.
+ --------------------------------------------------------------------------------
+ UPDATE na flag "Situação de credito" para "Bloqueado"
+ ; ---------
+ update
+	cliente
+set
+	fl_situacao_credito = '0'
+where
+	cd_cliente = '51668';
+ 
+ --------------------------------------------------------------------------------
+ 
+ UPDATE na flag "Situação de  credito" para "SomenteAvista"
+ 
+  update
+	cliente
+set
+	fl_situacao_credito = '1'
+where
+	cd_cliente = '51668';
+ --------------------------------------------------------------------------------
+ UPDATE na flag "Situação de credito" para "Credito Ilimitado"
+ 
+  update
+	cliente
+set
+	fl_situacao_credito = '3'
+where
+	cd_cliente = '51668';
+  --------------------------------------------------------------------------------
+  
+ Na aba "Dados complementares" tela na 107
+ UPDATE na flag "E-Commerce" para "Bloqueado"
+ UPDATE na flag "E-Commerce" para "Somente Orçamento"
+ UPDATE na flag  "E-Commerce" para "Pedido/Orçamento"
+ 
+ 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+UPDATE Ativar e desativar cliente.
+
+  SELECT CASE WHEN CLIENTE.FL_ATIVO = 'S' THEN 'ATIVO'  ELSE 'INATIVO' END AS STATUS,
+  	
+     CLIENTE.NM_CLIENTE,
+       CLIENTE.NM_FANTASIA
+  
+  FROM CLIENTE where
+	cd_cliente = '51668';
+
+
+UPDATE CLIENTE
+SET FL_ATIVO = 'S'
+WHERE cd_cliente = '51668';
+
+UPDATE CLIENTE
+SET FL_ATIVO = 'N'
+WHERE cd_cliente = '51668';
+
+
+--------------------------------------------------------------------------------
