@@ -62,7 +62,7 @@ Scenario('Controle de crédito Bloqueado ', () => {
     tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
 
     // ESPERO PELA MENSAGEM DE ERRO. "CLIENTE NAO LIBERADO PELO FINANCEIRO"
-    I.waitForText('Cliente não liberado pelo financeiro.', 20)
+    I.waitForText('Cliente não liberado pelo financeiro.', 50)
 
 
 

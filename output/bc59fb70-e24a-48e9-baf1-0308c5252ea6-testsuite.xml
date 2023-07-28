@@ -1,0 +1,136 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1690563296708' stop='1690563303631'>
+    <name>Controle de Credito Avista @CtcAvista:</name>
+    <title>Controle de Credito Avista @CtcAvista:</title>
+    <test-cases>
+        <test-case start='1690563296708' status='failed' stop='1690563303391'>
+            <name>Controle de crédito Avista</name>
+            <title>Controle de crédito Avista</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@CtcAvista'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690563296710' status='passed' stop='1690563296982'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563296982' status='passed' stop='1690563297093'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563297093' status='failed' stop='1690563298097'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563298097' status='failed' stop='1690563298139'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563298139' status='failed' stop='1690563298210'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563298210' status='passed' stop='1690563298238'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563298238' status='passed' stop='1690563298353'>
+                    <name>I fill field "CNPJ", "23.928.274/0001-40"</name>
+                    <title>I fill field "CNPJ", "23.928.274/0001-40"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563298353' status='passed' stop='1690563298449'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563298449' status='passed' stop='1690563298516'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563298516' status='passed' stop='1690563298760'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/user/produtoDetalhesCarroussel/6458"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/user/produtoDetalhesCarroussel/6458"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563298760' status='passed' stop='1690563300320'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563300320' status='passed' stop='1690563300416'>
+                    <name>I fill field "Quantidade", "50"</name>
+                    <title>I fill field "Quantidade", "50"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563300416' status='passed' stop='1690563300995'>
+                    <name>I wait for text "230,86", 50</name>
+                    <title>I wait for text "230,86", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563300995' status='passed' stop='1690563301248'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/user/carrinho"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/user/carrinho"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563301248' status='passed' stop='1690563302311'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563302311' status='passed' stop='1690563302319'>
+                    <name>I scroll page to bottom </name>
+                    <title>I scroll page to bottom </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563302319' status='passed' stop='1690563302379'>
+                    <name>I click "FINALIZAR PEDIDO"</name>
+                    <title>I click "FINALIZAR PEDIDO"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563302379' status='failed' stop='1690563303390'>
+                    <name>I wait for text "Liberado somente para compras à vista."</name>
+                    <title>I wait for text "Liberado somente para compras à vista."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Main session - Last Seen Screenshot' source='92410f9f-1f71-4681-8051-5ce460541e96-attachment.png' type='image/png' size='103941'/>
+            </attachments>
+            <failure>
+                <message>element (body) is not in DOM or there is no element(body) with text "Liberado somente para compras à vista." after 1 sec</message>
+                <stack-trace>Error: element (body) is not in DOM or there is no element(body) with text "Liberado somente para compras à vista." after 1 sec
+                    at file:///C:/Users/flexmobile/Desktop/LOJA-DEVELOP/LOJA-DEVELOP/node_modules/webdriverio/build/commands/browser/waitUntil.js:39:23
+                    at async Browser.wrapCommandFn (file:///C:/Users/flexmobile/Desktop/LOJA-DEVELOP/LOJA-DEVELOP/node_modules/@wdio/utils/build/shim.js:72:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

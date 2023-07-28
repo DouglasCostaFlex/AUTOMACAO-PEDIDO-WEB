@@ -1,0 +1,80 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1690563303635' stop='1690563306068'>
+    <name>E-commerce Bloqueado @EcommerceBloqueado:</name>
+    <title>E-commerce Bloqueado @EcommerceBloqueado:</title>
+    <test-cases>
+        <test-case start='1690563303635' status='passed' stop='1690563306027'>
+            <name>E-Commerce Com flag Bloqueado</name>
+            <title>E-Commerce Com flag Bloqueado</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@EcommerceBloqueado'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690563303637' status='passed' stop='1690563303902'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563303902' status='passed' stop='1690563304032'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563304032' status='failed' stop='1690563305035'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563305035' status='failed' stop='1690563305078'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563305079' status='failed' stop='1690563305166'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563305166' status='passed' stop='1690563305196'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563305196' status='passed' stop='1690563305333'>
+                    <name>I fill field "CNPJ", "23.928.274/0001-40"</name>
+                    <title>I fill field "CNPJ", "23.928.274/0001-40"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563305333' status='passed' stop='1690563305436'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563305436' status='passed' stop='1690563305485'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690563305485' status='passed' stop='1690563306026'>
+                    <name>I wait for text "Solicite liberação de uso do e-commerce.", 20</name>
+                    <title>I wait for text "Solicite liberação de uso do e-commerce.", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

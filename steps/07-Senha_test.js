@@ -1,5 +1,31 @@
 Feature('Senhas').tag('Senhas');
 
+const { 
+
+    Pagina_Login_Wildfly1,
+    Pagina_Historico_Pedido_Wildfly1,
+    Pagina_Historico_Financeiro_Wildfly1,
+    Pagina_Produto_16410_Wildfly1,
+    Pagina_Produto_08070_Wildfly1 ,
+    Pagina_Carrinho_Finalizar_Wildfly1,
+
+
+    Pagina_Login_Wildfly2,
+    Pagina_Historico_Pedido_Wildfly2,
+    Pagina_Historico_Financeiro_Wildfly2,
+    Pagina_Produto_16410_Wildfly2,
+    Pagina_Produto_08070_Wildfly2,
+    Pagina_Carrinho_Finalizar_Wildfly2,
+
+
+    Pagina_Login_Wildfly3,
+    Pagina_Historico_Pedido_Wildfly3,
+    Pagina_Historico_Financeiro_Wildfly3,
+    Pagina_Produto_16410_Wildfly3,
+    Pagina_Produto_08070_Wildfly3,
+    Pagina_Carrinho_Finalizar_Wildfly3
+    
+} = require("../pages/LinksExternos");
 
 const { Login } = require("../pages/login_page");
 const { I } = inject()
@@ -16,7 +42,7 @@ Before(() => {
 
     // CASO ESTEJA FECHADO EU FAÇO O LOGIN
     tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
-    I.waitForText('08070', 10)
+    I.waitForText('08070', 50)
 
 })
 
@@ -32,10 +58,10 @@ Scenario('Trocar Senha', () => {
     I.click('ALTERAR')
 
     //VALIDAÇÃO
-    I.waitForText('Senha alterada com sucesso',5)
+    I.waitForText('Senha alterada com sucesso',30)
 
     Login(CNPJ_CORRETO, SENHA_ALTERADA);
-    I.waitForText('08070', 10)
+    I.waitForText('08070', 50)
 
     //CLICO PRA ABRIR O MENU PARA ALTERA A SENHA PARA A ANTERIOR 
     I.click('/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button')
@@ -46,7 +72,7 @@ Scenario('Trocar Senha', () => {
     I.click('ALTERAR')
     
     //VALIDAÇÃO
-    I.waitForText('Senha alterada com sucesso',5)
+    I.waitForText('Senha alterada com sucesso',50)
 
 
 

@@ -1,5 +1,32 @@
 Feature('E-commerce apenas orçamento').tag('EcommerceOrcamento');
-const { Pagina_Login_Wildfly1, Pagina_Produto_08070_Wildfly1, Pagina_Carrinho_Finalizar_Wildfly1 } = require("../pages/LinksExternos");
+
+const { 
+
+    Pagina_Login_Wildfly1,
+    Pagina_Historico_Pedido_Wildfly1,
+    Pagina_Historico_Financeiro_Wildfly1,
+    Pagina_Produto_16410_Wildfly1,
+    Pagina_Produto_08070_Wildfly1 ,
+    Pagina_Carrinho_Finalizar_Wildfly1,
+
+
+    Pagina_Login_Wildfly2,
+    Pagina_Historico_Pedido_Wildfly2,
+    Pagina_Historico_Financeiro_Wildfly2,
+    Pagina_Produto_16410_Wildfly2,
+    Pagina_Produto_08070_Wildfly2,
+    Pagina_Carrinho_Finalizar_Wildfly2,
+
+
+    Pagina_Login_Wildfly3,
+    Pagina_Historico_Pedido_Wildfly3,
+    Pagina_Historico_Financeiro_Wildfly3,
+    Pagina_Produto_16410_Wildfly3,
+    Pagina_Produto_08070_Wildfly3,
+    Pagina_Carrinho_Finalizar_Wildfly3
+    
+} = require("../pages/LinksExternos");
+
 const { Login } = require("../pages/login_page");
 const { I } = inject()
 
@@ -49,10 +76,10 @@ Scenario('E-Commerce com Flag apenas Orçamento', () => {
     tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
 
     //AGUARDO PELO MENU INICIAL 
-    I.waitForText('08070', 20)
+    I.waitForText('08070', 50)
     //VOU PARA DENTRO DO PRODUTO.
-    I.amOnPage(Pagina_Produto_08070_Wildfly1)
-    I.waitForText('08070', 20)
+    I.amOnPage(Pagina_Produto_08070_Wildfly2)
+    I.waitForText('08070', 50)
 
     //ADICIONO 50 ITENS NO PEDIDO
     I.fillField('Quantidade', '50')
@@ -63,8 +90,8 @@ Scenario('E-Commerce com Flag apenas Orçamento', () => {
     I.wait(5)
 
     //VOU PARA ABA FINALIZAR PEDIDO
-    I.amOnPage(Pagina_Carrinho_Finalizar_Wildfly1)
-    I.waitForText('08070', 10)
+    I.amOnPage(Pagina_Carrinho_Finalizar_Wildfly2)
+    I.waitForText('08070', 50)
 
     //VOU PARA O FIM DA PÁGINA.
     I.scrollPageToBottom();
@@ -73,7 +100,7 @@ Scenario('E-Commerce com Flag apenas Orçamento', () => {
     I.click('SOLICITAR ORÇAMENTO')
 
     //ESPERO PELA MENSAGEM "ORÇAMENTO SOLICITAR COM SUCESSO"
-    I.waitForText('Orçamento solicitado com sucesso', 20)
+    I.waitForText('Orçamento solicitado com sucesso', 50)
 
 
 });

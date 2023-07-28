@@ -68,3 +68,15 @@ WHERE cd_cliente = '51668';
 
 
 --------------------------------------------------------------------------------
+DADOS CLIENTE   CNPJ E SENHA
+
+SELECT CASE WHEN CLIENTE.FL_ATIVO = 'S' THEN 'ATIVO'  ELSE 'INATIVO' END AS STATUS,
+  	
+     CLIENTE.NM_CLIENTE,
+       cliente.cnpj_cpf ,
+       CLIENTE.senha_acesso
+
+       
+  FROM CLIENTE  
+
+--------------------------------------------------------------------------------

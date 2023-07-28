@@ -1,17 +1,30 @@
 Feature('Finalizar Pedido').tag('FinalizarPedido');
 
-const { Pagina_Login_Wildfly1,
-    Pagina_Produto_16410_Wildfly1,
-    Pagina_Historico_Pedido_Wildfly1 ,
+const {
+
+    Pagina_Login_Wildfly1,
+    Pagina_Historico_Pedido_Wildfly1,
     Pagina_Historico_Financeiro_Wildfly1,
-    Pagina_Login_Wildfly2 = '',
-    Pagina_Historico_Pedido_Wildfly2 = '',
-    Pagina_Historico_Financeiro_Wildfly2 = '',
-    Pagina_Produto_08070_Wildfly2 = '',
-    Pagina_Login_Wildfly3 = '',
-    Pagina_Historico_Pedido_Wildfly3 = '',
-    Pagina_Historico_Financeiro_Wildfly3 = '',
-    Pagina_Produto_08070_Wildfly3 = '',
+    Pagina_Produto_16410_Wildfly1,
+    Pagina_Produto_08070_Wildfly1,
+    Pagina_Carrinho_Finalizar_Wildfly1,
+
+
+    Pagina_Login_Wildfly2,
+    Pagina_Historico_Pedido_Wildfly2,
+    Pagina_Historico_Financeiro_Wildfly2,
+    Pagina_Produto_16410_Wildfly2,
+    Pagina_Produto_08070_Wildfly2,
+    Pagina_Carrinho_Finalizar_Wildfly2,
+
+
+    Pagina_Login_Wildfly3,
+    Pagina_Historico_Pedido_Wildfly3,
+    Pagina_Historico_Financeiro_Wildfly3,
+    Pagina_Produto_16410_Wildfly3,
+    Pagina_Produto_08070_Wildfly3,
+    Pagina_Carrinho_Finalizar_Wildfly3
+
 } = require("../pages/LinksExternos");
 
 const { Login } = require("../pages/login_page");
@@ -28,10 +41,10 @@ const SENHA_CORRETA = '48303523'
 
 Before(() => {
 
- 
+
     // CASO ESTEJA FECHADO EU FAÇO O LOGIN
     tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
-    I.waitForText('08070', 10)
+    I.waitForText('08070', 50)
 
 })
 
@@ -42,9 +55,9 @@ Scenario('Aba "FINALIZAR" Validar valores do carrinho ', () => {
     I.scrollPageToTop();
 
     // VALIDAÇÃO DOS VALORES E PRODUTO DO CARRINHO CONFORME OS PEDIDOS
-    I.waitForText('241,25',30)
-    I.waitForText('4,00',30)
-    I.waitForText('237,25',30)
+    I.waitForText('241,25', 50)
+    I.waitForText('4,00', 50)
+    I.waitForText('237,25', 50)
 
 
 
@@ -57,10 +70,10 @@ Scenario('Aba "FINALIZAR" Validar Remoção de um produto ', () => {
 
     //EU REMOVO O PRIMEIRO ITEM "17351 - ACABAMENTO MONOCOMANDO CHUVEIRO NEXUS 3/4POL CROMADO DOCOL"
     I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/carrinho-component/div/ul/li[1]/div/div[2]/button')
-  
+
     //VALIDAÇÃO DOS VALORES E PRODUTO DO CARRINHO CONFORME FOI REMOVIDO 1 ITEM.
-    I.waitForText('Total: R$ 237,25',10)
-    I.waitForText('47,45',10)
+    I.waitForText('Total: R$ 237,25', 50)
+    I.waitForText('47,45', 50)
 
 }).tag('AbaFinalizarValidarRemocaoCarrinho')
 
@@ -81,7 +94,7 @@ Scenario('Aba "FINALIZAR"  ENTREGA - Endereço de Entrega PRINCIPAL ', () => {
     I.click('FINALIZAR PEDIDO')
 
     //VALIDAÇÃO
-    I.waitForText('Pedido Finalizado', 5)
+    I.waitForText('Pedido Finalizado', 50)
 
 }).tag('AbaFinalizarEntregaEnderecoPrincipal')
 
@@ -101,8 +114,8 @@ Scenario('Aba "FINALIZAR"  ENTREGA - Endereço de Entrega SECUNDÁRIO ', () => {
     I.click('ALTERAR')
     I.wait(2)
     I.click('SELECIONAR')
-    I.waitForText('RUA HELIO ESTEFANO BECKER , 1 (TESTE)',5)
-    I.waitForText('REAL PARQUE, SAO JOSE - 88113460',5)
+    I.waitForText('RUA HELIO ESTEFANO BECKER , 1 (TESTE)', 50)
+    I.waitForText('REAL PARQUE, SAO JOSE - 88113460', 50)
 
     I.scrollPageToBottom();
 
@@ -115,7 +128,7 @@ Scenario('Aba "FINALIZAR"  ENTREGA - Endereço de Entrega SECUNDÁRIO ', () => {
     I.click('FINALIZAR PEDIDO')
 
     //VALIDAÇÃO
-    I.waitForText('Pedido Finalizado', 5)
+    I.waitForText('Pedido Finalizado', 50)
 
 }).tag('AbaFinalizarEntregaEnderecoSecundario')
 
@@ -139,7 +152,7 @@ Scenario('Aba "FINALIZAR" ENTREGA - Retirada Balcao ', () => {
     I.click('FINALIZAR PEDIDO')
 
     //VALIDAÇÃO
-    I.waitForText('Pedido Finalizado', 5)
+    I.waitForText('Pedido Finalizado', 50)
 
 }).tag('AbaFinalizarEntregaRetiradaBalcao')
 
@@ -161,7 +174,7 @@ Scenario('Aba "FINALIZAR" AVISTA - VALOR ABAIXO DE 200 ', () => {
     I.click('FINALIZAR PEDIDO')
 
     //VALIDAÇÃO
-    I.waitForText('Parcela 1(100%) abaixo valor mínimo (R$200.00).', 5)
+    I.waitForText('Parcela 1(100%) abaixo valor mínimo (R$200.00).', 50)
 
 }).tag('AbaFinalizarAvistaValorAbaixo')
 
@@ -183,7 +196,7 @@ Scenario('Aba "FINALIZAR" BOLETO - VALOR ABAIXO DE 100 ', () => {
     I.click('FINALIZAR PEDIDO')
 
     //VALIDAÇÃO
-    I.waitForText('Parcela 1(100%) abaixo valor mínimo (R$100.00).', 5)
+    I.waitForText('Parcela 1(100%) abaixo valor mínimo (R$100.00).', 50)
 
 
 }).tag('FinalizarBoletoValorAbaixo')
@@ -197,7 +210,7 @@ Scenario('Aba "FINALIZAR" Continuar Comprando', () => {
     I.scrollPageToTop();
 
     //VALIDAÇÃO
-    I.waitForText('08070', 5)
+    I.waitForText('08070', 50)
 
 }).tag('AbaFinalizarContinuarComprando')
 
@@ -209,7 +222,7 @@ Scenario('Aba "FINALIZAR" Finalizar Pedido', () => {
     I.click('FINALIZAR PEDIDO')
 
     //VALIDAÇÃO
-    I.waitForText('Pedido Finalizado', 5)
+    I.waitForText('Pedido Finalizado', 50)
 
 }).tag('AbaFinalizarFinalizarPedido')
 

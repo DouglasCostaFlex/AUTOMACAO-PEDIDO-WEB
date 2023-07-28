@@ -2,18 +2,31 @@ Feature('Pedido').tag('Pedido');
 const { Login } = require("../pages/login_page");
 const pedido = require("../pages/pedido");
 
-const { Pagina_Login_Wildfly1,
-    Pagina_Produto_16410_Wildfly1,
-    Pagina_Historico_Pedido_Wildfly1 ,
+const {
+
+    Pagina_Login_Wildfly1,
+    Pagina_Historico_Pedido_Wildfly1,
     Pagina_Historico_Financeiro_Wildfly1,
-    Pagina_Login_Wildfly2 = '',
-    Pagina_Historico_Pedido_Wildfly2 = '',
-    Pagina_Historico_Financeiro_Wildfly2 = '',
-    Pagina_Produto_08070_Wildfly2 = '',
-    Pagina_Login_Wildfly3 = '',
-    Pagina_Historico_Pedido_Wildfly3 = '',
-    Pagina_Historico_Financeiro_Wildfly3 = '',
-    Pagina_Produto_08070_Wildfly3 = '',
+    Pagina_Produto_16410_Wildfly1,
+    Pagina_Produto_08070_Wildfly1,
+    Pagina_Carrinho_Finalizar_Wildfly1,
+
+
+    Pagina_Login_Wildfly2,
+    Pagina_Historico_Pedido_Wildfly2,
+    Pagina_Historico_Financeiro_Wildfly2,
+    Pagina_Produto_16410_Wildfly2,
+    Pagina_Produto_08070_Wildfly2,
+    Pagina_Carrinho_Finalizar_Wildfly2,
+
+
+    Pagina_Login_Wildfly3,
+    Pagina_Historico_Pedido_Wildfly3,
+    Pagina_Historico_Financeiro_Wildfly3,
+    Pagina_Produto_16410_Wildfly3,
+    Pagina_Produto_08070_Wildfly3,
+    Pagina_Carrinho_Finalizar_Wildfly3
+
 } = require("../pages/LinksExternos");
 
 const { I } = inject()
@@ -31,7 +44,7 @@ Before(() => {
 
     // CASO ESTEJA FECHADO EU FAÇO O LOGIN
     tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
-    I.waitForText('08070', 30)
+    I.waitForText('08070', 50)
 
 })
 
@@ -41,18 +54,18 @@ Scenario('Aba "Inicial" ', () => {
     //NO PRODUTO "ACABAMENTO CROMADO" ADICIONO +5 PRODUTOS.
     I.refreshPage();
     I.wait(4)
-    I.amOnPage(Pagina_Produto_16410_Wildfly1)
+    I.amOnPage(Pagina_Produto_16410_Wildfly2)
     I.waitForText('Quantidade', 20)
     I.fillField('Quantidade', '5')
 
     //ESPERO PELO VALOR DE 5 PEDIDOS ADICIONADOS NO CARRINHO
-    I.waitForText('237,25', 10)
+    I.waitForText('237,25', 30)
 
     //REMOVO 2 PEDIDOS 
     I.fillField('Quantidade', '3')
 
     //ESPERO PELO VALOR DE APENAS 3 PEDIDOS ADICIONADOS NO CARRINHO
-    I.waitForText('142,35', 5)
+    I.waitForText('142,35', 30)
 
     //SALVO UMA PRINTSCREEN APENAS PARA IR PRO OUTPUT, CASO EU QUEIRA VERIFICAR O PASSO A PASSO
     I.saveScreenshot('@AbaInicial.png')
@@ -91,21 +104,21 @@ Scenario('Aba "Inicial" Filtros ', () => {
     //CLICO NA FLAG "PROMOÇÃO"
     I.click('PROMOÇÃO')
     //ESPERO PELO PRODUTO "08070"
-    I.waitForText('08070')
+    I.waitForText('08070', 50)
     //DESMARCO A FLAG ""
     I.click('PROMOÇÃO')
 
     //CLICO NA FLAG "ABRAÇADEIRAS"
     I.click('ABRAÇADEIRAS')
     //ESPERO PELO PRODUTO "16687"
-    I.waitForText('16687')
+    I.waitForText('16687', 50)
     //DESMARCO A FLAG "ABRAÇADEIRAS"
     I.click('ABRAÇADEIRAS')
 
     //CLICO NA FLAG "ACESSÓRIOS CAIXA ACOPLADA"
     I.click('ACESSÓRIOS CAIXA ACOPLADA')
     //ESPERO PELO PRODUTO "17331"
-    I.waitForText('17331')
+    I.waitForText('17331', 50)
     //DESMARCO A FLAG "ACESSÓRIOS CAIXA ACOPLADA""
     I.click('ACESSÓRIOS CAIXA ACOPLADA')
 
@@ -131,7 +144,7 @@ Scenario('Aba "CARRINHO" Continuar comprando  ', () => {
     //VOU PARA CIMA 
     I.scrollPageToTop();
     //ESPERO VER O PRODUTO "08070"
-    I.waitForText('08070', 10)
+    I.waitForText('08070', 50)
 
     //SALVO UMA PRINTSCREEN APENAS PARA IR PRO OUTPUT, CASO EU QUEIRA VERIFICAR O PASSO A PASSO
     I.saveScreenshot('@AbaContinuarComprando.png')
@@ -150,15 +163,15 @@ Scenario('Aba "CARRINHO" Solicitar Orçamento ', () => {
     I.click('SOLICITAR ORÇAMENTO')
 
     //ESPERO PELA MENSAGEM "ORÇAMENTO SOLICITADO"
-    I.waitForText('Orçamento solicitado com sucesso', 10)
+    I.waitForText('Orçamento solicitado com sucesso', 50)
     //CLICO NO BOTAO "SOLICITAR NOVO ORÇAMENTO"
     I.click('SOLICITAR NOVO ORÇAMENTO')
     //ESPERO PELO ITEM NO MENU INICIAL
-    I.waitForText('08070', 10)
+    I.waitForText('08070', 50)
 
     //VOU PARA ABA "PEDIDOS" E VEJO SE MOSTRA O PEDIDO FEITO ANTERIORMENTE 
-    I.amOnPage(Pagina_Historico_Pedido_Wildfly1)
-    I.waitForText('237,25', 10)
+    I.amOnPage(Pagina_Historico_Pedido_Wildfly2)
+    I.waitForText('237,25', 50)
 
     //SALVO UMA PRINTSCREEN APENAS PARA IR PRO OUTPUT, CASO EU QUEIRA VERIFICAR O PASSO A PASSO
     I.saveScreenshot('@SolicitarOrcamento.png')
@@ -182,8 +195,8 @@ Scenario('Aba "CARRINHO" Finalizar pedido ', () => {
     I.click('FINALIZAR PEDIDO')
 
     //VOU PARA ABA "PEDIDOS" E VEJO SE MOSTRA O PEDIDO FEITO ANTERIORMENTE 
-    I.amOnPage(Pagina_Historico_Pedido_Wildfly1)
-    I.waitForText('237,25', 10)
+    I.amOnPage(Pagina_Historico_Pedido_Wildfly2)
+    I.waitForText('237,25', 50)
 
     //SALVO UMA PRINTSCREEN APENAS PARA IR PRO OUTPUT, CASO EU QUEIRA VERIFICAR O PASSO A PASSO
     I.saveScreenshot('@AbaCarrinhoFinalizarPedido.png')

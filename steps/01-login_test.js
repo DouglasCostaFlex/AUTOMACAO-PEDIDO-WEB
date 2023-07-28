@@ -1,18 +1,31 @@
 
 const { Login } = require("../pages/login_page");
 
-const { Pagina_Login_Wildfly1,
-  Pagina_Produto_16410_Wildfly1,
-  Pagina_Historico_Pedido_Wildfly1 ,
+const { 
+
+  Pagina_Login_Wildfly1,
+  Pagina_Historico_Pedido_Wildfly1,
   Pagina_Historico_Financeiro_Wildfly1,
-  Pagina_Login_Wildfly2 = '',
-  Pagina_Historico_Pedido_Wildfly2 = '',
-  Pagina_Historico_Financeiro_Wildfly2 = '',
-  Pagina_Produto_08070_Wildfly2 = '',
-  Pagina_Login_Wildfly3 = '',
-  Pagina_Historico_Pedido_Wildfly3 = '',
-  Pagina_Historico_Financeiro_Wildfly3 = '',
-  Pagina_Produto_08070_Wildfly3 = '',
+  Pagina_Produto_16410_Wildfly1,
+  Pagina_Produto_08070_Wildfly1 ,
+  Pagina_Carrinho_Finalizar_Wildfly1,
+
+
+  Pagina_Login_Wildfly2,
+  Pagina_Historico_Pedido_Wildfly2,
+  Pagina_Historico_Financeiro_Wildfly2,
+  Pagina_Produto_16410_Wildfly2,
+  Pagina_Produto_08070_Wildfly2,
+  Pagina_Carrinho_Finalizar_Wildfly2,
+
+
+  Pagina_Login_Wildfly3,
+  Pagina_Historico_Pedido_Wildfly3,
+  Pagina_Historico_Financeiro_Wildfly3,
+  Pagina_Produto_16410_Wildfly3,
+  Pagina_Produto_08070_Wildfly3,
+  Pagina_Carrinho_Finalizar_Wildfly3
+  
 } = require("../pages/LinksExternos");
 
 Feature('login').tag('Login');
@@ -41,11 +54,11 @@ const Numero_compras = '/html/body/my-app/cadastro-novo-cliente-component/div/di
 Before(() => {
 
   //VOU PARA PAGINA "LOGIN"
-  I.amOnPage(Pagina_Login_Wildfly1)
+  I.amOnPage(Pagina_Login_Wildfly2)
   //CASO DE PROBLEMA DE SEGURANÇA, APERTA EM MODO AVANÇADO E COTNINUA
   tryTo(() => I.waitForText('Avançado'))
   tryTo(() => I.click('Avançado'))
-  tryTo(() => I.click('Ir para 192.168.1.236 (não seguro)'))
+  tryTo(() => I.click('Ir para 192.168.1.128 (não seguro)'))
   I.wait(5)
 
 })
@@ -72,7 +85,6 @@ Scenario('Aba "Já Sou cliente" ', () => {
 
 
 Scenario('Aba "Quero ser cliente" ', () => {
-
 
   //VOU PARA ABA "QUERO SER CLIENTE"
   I.click('Quero ser cliente')
@@ -208,7 +220,7 @@ Scenario('Login Correto', () => {
 
   //FAÇO LOGIN COM OS DADOS CORRETOS.
   Login(CNPJ_CORRETO, SENHA_CORRETA)
-  I.waitForText('08070', 10)
+  I.waitForText('08070', 30)
 
   I.saveScreenshot('@LoginCorreto.png')
 
@@ -220,13 +232,13 @@ Scenario('Logout', () => {
   Login(CNPJ_CORRETO, SENHA_CORRETA)
 
   //ESPERO PELA ABA "PRODUTOS"
-  I.waitForText('08070', 10)
+  I.waitForText('08070', 30)
 
   //CLICO NO BOTAO DE MENU 
   I.click('/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button')
 
   //CLICO NO BOTAO SAIR
-  I.waitForText('SAIR', 10)
+  I.waitForText('SAIR', 30)
   I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav/mat-nav-list/a[7]/div')
 
   //AGUARDO PELO INPUT "CNPJ" NA ABA LOGIN

@@ -1,4 +1,5 @@
 Feature('E-commerce Bloqueado').tag('EcommerceBloqueado');
+const { Pagina_Login_Wildfly1 } = require("../pages/LinksExternos");
 const { Login } = require("../pages/login_page");
 const { I } = inject()
 

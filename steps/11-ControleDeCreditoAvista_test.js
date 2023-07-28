@@ -13,7 +13,7 @@ const { Pagina_Login_Wildfly1,
     Pagina_Historico_Pedido_Wildfly3 = '',
     Pagina_Historico_Financeiro_Wildfly3 = '',
     Pagina_Produto_08070_Wildfly3 = '',
-    Pagina_Produto_08070_Wildfly1,
+    Pagina_Carrinho_Finalizar_Wildfly2,
 } = require("../pages/LinksExternos");
 
 const { Login } = require("../pages/login_page");
@@ -63,18 +63,18 @@ Scenario('Controle de crédito Avista', () => {
     tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
 
     //VOU NO CARRINHO E ADICIONO 50 ITENS POR UNIDADE E VOU PARA O CARRINHO 
-    I.amOnPage(Pagina_Produto_08070_Wildfly1)
-    I.waitForText('08070', 20)
+    I.amOnPage(Pagina_Produto_08070_Wildfly2)
+    I.waitForText('08070', 50)
 
     //ADICIONO ITEM NO CARRINHO
     I.fillField('Quantidade', '50')
 
     //ESPERO PELO VALOR NO CARRINHO
-    I.waitForText('230,86', 20)
+    I.waitForText('230,86', 50)
 
     //VOU PARA O CARRINHO
-    I.amOnPage(Pagina_Produto_08070_Wildfly1)
-    I.waitForText('08070', 20)
+    I.amOnPage(Pagina_Carrinho_Finalizar_Wildfly2)
+    I.waitForText('08070', 50)
 
     //VOU PARA O FIM DA PÁGINA.
     I.scrollPageToBottom();

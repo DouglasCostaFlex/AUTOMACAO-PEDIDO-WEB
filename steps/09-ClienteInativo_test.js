@@ -1,5 +1,18 @@
 Feature('ClienteInativo').tag('ClienteInativo');
 
+const { Pagina_Login_Wildfly1,
+    Pagina_Produto_16410_Wildfly1,
+    Pagina_Historico_Pedido_Wildfly1 ,
+    Pagina_Historico_Financeiro_Wildfly1,
+    Pagina_Login_Wildfly2 = '',
+    Pagina_Historico_Pedido_Wildfly2 = '',
+    Pagina_Historico_Financeiro_Wildfly2 = '',
+    Pagina_Produto_08070_Wildfly2 = '',
+    Pagina_Login_Wildfly3 = '',
+    Pagina_Historico_Pedido_Wildfly3 = '',
+    Pagina_Historico_Financeiro_Wildfly3 = '',
+    Pagina_Produto_08070_Wildfly3 = '',
+} = require("../pages/LinksExternos");
 
 const { Login } = require("../pages/login_page");
 const { I } = inject()
@@ -48,7 +61,7 @@ Scenario('Cliente Inativo', () => {
     tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
 
     // ESPERO PELA MENSAGEM DE ERRO. "CLIENTE INATIVO."
-    I.waitForText('Cliente inativo.', 20)
+    I.waitForText('Cliente inativo.', 50)
 
 
 

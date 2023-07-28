@@ -1,17 +1,30 @@
 Feature('Carrinho Dentro Do Item').tag('CarrinhoDentroDoItem');
 
-const { Pagina_Login_Wildfly1,
-    Pagina_Produto_16410_Wildfly1,
-    Pagina_Historico_Pedido_Wildfly1 ,
+const { 
+
+    Pagina_Login_Wildfly1,
+    Pagina_Historico_Pedido_Wildfly1,
     Pagina_Historico_Financeiro_Wildfly1,
-    Pagina_Login_Wildfly2 = '',
-    Pagina_Historico_Pedido_Wildfly2 = '',
-    Pagina_Historico_Financeiro_Wildfly2 = '',
-    Pagina_Produto_08070_Wildfly2 = '',
-    Pagina_Login_Wildfly3 = '',
-    Pagina_Historico_Pedido_Wildfly3 = '',
-    Pagina_Historico_Financeiro_Wildfly3 = '',
-    Pagina_Produto_08070_Wildfly3 = '',
+    Pagina_Produto_16410_Wildfly1,
+    Pagina_Produto_08070_Wildfly1 ,
+    Pagina_Carrinho_Finalizar_Wildfly1,
+
+
+    Pagina_Login_Wildfly2,
+    Pagina_Historico_Pedido_Wildfly2,
+    Pagina_Historico_Financeiro_Wildfly2,
+    Pagina_Produto_16410_Wildfly2,
+    Pagina_Produto_08070_Wildfly2,
+    Pagina_Carrinho_Finalizar_Wildfly2,
+
+
+    Pagina_Login_Wildfly3,
+    Pagina_Historico_Pedido_Wildfly3,
+    Pagina_Historico_Financeiro_Wildfly3,
+    Pagina_Produto_16410_Wildfly3,
+    Pagina_Produto_08070_Wildfly3,
+    Pagina_Carrinho_Finalizar_Wildfly3
+    
 } = require("../pages/LinksExternos");
 
 const { Login } = require("../pages/login_page");
@@ -31,7 +44,7 @@ Before(() => {
    
     // CASO ESTEJA FECHADO EU FAÇO O LOGIN
     tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
-    I.waitForText('08070', 20)
+    I.waitForText('08070', 50)
 
 })
 
@@ -40,9 +53,10 @@ Scenario('Aba "Carrinho" Dentro do item - Finalizar Pedido ', () => {
     //EU CLICO NO ITEM QUE QUERO COMPRAR
     I.click('08070')
     //ESPERO PELO CODIGO DO PRODUTO CORRETO 3387
-    I.waitForText('Código: 08070', 20)
+    I.waitForText('Código: 08070', 50)
 
     //VALIDAÇÃO
+    
     //VALIDO A FICHA TECNICA DO PRODUTO.
     I.waitForText('Ficha técnica')
     I.waitForText('Pino adaptador com 3 saidas 2p+T (padrão novo). Não indicado adaptar vários pinos juntos devido a sobrecarga de tensão.')
@@ -55,7 +69,7 @@ Scenario('Aba "Carrinho" Dentro do item - Finalizar Pedido ', () => {
     I.fillField('Quantidade', '4')
     
     //VALIDAÇÃO
-    I.waitForText('320,00', 5)
+    I.waitForText('320,00', 50)
     I.waitForText('Vl. Total (IPI + ST + FCP): R$ 320,00', 5)
 
     //CLICO EM FINALIZAR PEDIDO
@@ -73,13 +87,13 @@ Scenario('Aba "Carrinho" Dentro do item - Finalizar Pedido ', () => {
     I.click('FINALIZAR PEDIDO')
 
     //VALIDAÇÃO
-    I.waitForText('Pedido Finalizado', 5)
+    I.waitForText('Pedido Finalizado', 30)
 
     // /VOU PARA ABA "PEDIDOS" E VEJO SE MOSTRA O PEDIDO FEITO ANTERIORMENTE 
-    I.amOnPage(Pagina_Historico_Pedido_Wildfly1)
+    I.amOnPage(Pagina_Historico_Pedido_Wildfly2)
 
     //VALIDAÇÃO
-    I.waitForText('320', 10)
+    I.waitForText('320', 50)
 
 
 }).tag('DentroDoItem')

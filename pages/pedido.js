@@ -1,4 +1,30 @@
-const { Pagina_Produto_16410_Wildfly1 } = require("./LinksExternos");
+
+const { 
+
+  Pagina_Login_Wildfly1,
+  Pagina_Historico_Pedido_Wildfly1,
+  Pagina_Historico_Financeiro_Wildfly1,
+  Pagina_Produto_16410_Wildfly1,
+  Pagina_Produto_08070_Wildfly1 ,
+  Pagina_Carrinho_Finalizar_Wildfly1,
+
+
+  Pagina_Login_Wildfly2,
+  Pagina_Historico_Pedido_Wildfly2,
+  Pagina_Historico_Financeiro_Wildfly2,
+  Pagina_Produto_16410_Wildfly2,
+  Pagina_Produto_08070_Wildfly2,
+  Pagina_Carrinho_Finalizar_Wildfly2,
+
+
+  Pagina_Login_Wildfly3,
+  Pagina_Historico_Pedido_Wildfly3,
+  Pagina_Historico_Financeiro_Wildfly3,
+  Pagina_Produto_16410_Wildfly3,
+  Pagina_Produto_08070_Wildfly3,
+  Pagina_Carrinho_Finalizar_Wildfly3
+  
+} = require("../pages/LinksExternos");
 
 const { I } = inject();
 
@@ -10,7 +36,7 @@ module.exports = {
 
     I.refreshPage();
     I.wait(4)
-    I.amOnPage(Pagina_Produto_16410_Wildfly1)
+    I.amOnPage(Pagina_Produto_16410_Wildfly2)
     I.waitForText('Quantidade', 20)
 
     //47,45 o valor do produto, 16410  o codigo dele.
@@ -21,7 +47,7 @@ module.exports = {
   //ESSE METODO EU REMOVO O PRODUTO. ESTA DIRECIONADO PARA O PRODUTO "ADAPTADOR SOLDÁVEL CURTO  60 MM X 2" AMANCO"
   RemoverPedido() {
 
-    I.amOnPage('Pagina_Produto_16410_Wildfly1')
+    I.amOnPage(Pagina_Produto_16410_Wildfly2)
     I.waitForText('Quantidade', 20)
 
     I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/div[2]/div/div[9]/produto/mat-card/mat-card-actions/button[1]')
@@ -55,7 +81,7 @@ module.exports = {
   CriarPedido() {
 
     //ADICIONO NO CARRINHO O 16410 QUE DA NO TOTAL 237,25
-    I.amOnPage(Pagina_Produto_16410_Wildfly1)
+    I.amOnPage(Pagina_Produto_16410_Wildfly2)
     I.waitForText('Quantidade', 20)
     I.fillField('Quantidade','5')
 
