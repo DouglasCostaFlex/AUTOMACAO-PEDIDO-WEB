@@ -1,0 +1,711 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1690806293157' stop='1690806431673'>
+    <name>login @Login:</name>
+    <title>login @Login:</title>
+    <test-cases>
+        <test-case start='1690806309618' status='passed' stop='1690806319577'>
+            <name>Aba "Já Sou cliente" @JaSouCliente</name>
+            <title>Aba "Já Sou cliente" @JaSouCliente</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Login'/>
+                <label name='tag' value='@JaSouCliente'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690806309631' status='passed' stop='1690806310264'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806310266' status='passed' stop='1690806310357'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806310357' status='passed' stop='1690806310510'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806310510' status='passed' stop='1690806313785'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806313785' status='passed' stop='1690806318797'>
+                    <name>I wait 5</name>
+                    <title>I wait 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806318801' status='passed' stop='1690806318978'>
+                    <name>I click "/html/body/my-app/login-component/div/div[1]/div/form/div[2]/button[1]"</name>
+                    <title>I click "/html/body/my-app/login-component/div/div[1]/div/form/div[2]/button[1]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806318978' status='passed' stop='1690806319135'>
+                    <name>I fill field "Razão Social", "RazaoTeste"</name>
+                    <title>I fill field "Razão Social", "RazaoTeste"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806319136' status='passed' stop='1690806319280'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806319280' status='passed' stop='1690806319431'>
+                    <name>I fill field "Telefone", "48000000000"</name>
+                    <title>I fill field "Telefone", "48000000000"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806319431' status='passed' stop='1690806319577'>
+                    <name>I fill field "E-mail", "teste.teste@gmail.com"</name>
+                    <title>I fill field "E-mail", "teste.teste@gmail.com"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1690806319652' status='failed' stop='1690806327436'>
+            <name>Aba "Quero ser cliente" @QueroSerCliente</name>
+            <title>Aba "Quero ser cliente" @QueroSerCliente</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Login'/>
+                <label name='tag' value='@QueroSerCliente'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690806319654' status='passed' stop='1690806319971'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806319972' status='failed' stop='1690806320984'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806320984' status='failed' stop='1690806321064'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806321064' status='failed' stop='1690806321198'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806321198' status='passed' stop='1690806326198'>
+                    <name>I wait 5</name>
+                    <title>I wait 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806326205' status='passed' stop='1690806326410'>
+                    <name>I click "Quero ser cliente"</name>
+                    <title>I click "Quero ser cliente"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806326410' status='passed' stop='1690806326619'>
+                    <name>I fill field "Razão Social", "RazaoTeste"</name>
+                    <title>I fill field "Razão Social", "RazaoTeste"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806326619' status='passed' stop='1690806326782'>
+                    <name>I fill field "CNPJ", "0000000000000"</name>
+                    <title>I fill field "CNPJ", "0000000000000"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806326782' status='passed' stop='1690806326909'>
+                    <name>I fill field "Telefone", "48000000000"</name>
+                    <title>I fill field "Telefone", "48000000000"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806326909' status='passed' stop='1690806327027'>
+                    <name>I fill field "Inscrição Estadual", "120000000"</name>
+                    <title>I fill field "Inscrição Estadual", "120000000"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806327027' status='passed' stop='1690806327184'>
+                    <name>I fill field "E-mail NFe", "Email.nfeTeste@gmail.com"</name>
+                    <title>I fill field "E-mail NFe", "Email.nfeTeste@gmail.com"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806327184' status='passed' stop='1690806327324'>
+                    <name>I fill field "Nome Fantasia", "FantasiaTeste"</name>
+                    <title>I fill field "Nome Fantasia", "FantasiaTeste"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806327325' status='failed' stop='1690806327435'>
+                    <name>I fill field "/html/body/my-app/cadastro-novo-cliente-component/div/div/div/form/div[1]/div[4]/div[2]/mat-form-field[2]/div/div[1]/div/input", "teste.teste@gmail.com"</name>
+                    <title>I fill field "/html/body/my-app/cadastro-novo-cliente-component/div/div/div/form/div[1]/div[4]/div[2]/mat-form-field[2]/div/div[1]/div/input", "teste.teste@gmail.com"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Main session - Last Seen Screenshot' source='08646203-5ef7-4351-9ed7-27ab6ac0673a-attachment.png' type='image/png' size='120207'/>
+            </attachments>
+            <failure>
+                <message>Field "/html/body/my-app/cadastro-novo-cliente-component/div/div/div/form/div[1]/div[4]/div[2]/mat-form-field[2]/div/div[1]/div/input" was not found by text|CSS|XPath</message>
+                <stack-trace>Error: Field "/html/body/my-app/cadastro-novo-cliente-component/div/div/div/form/div[1]/div[4]/div[2]/mat-form-field[2]/div/div[1]/div/input" was not found by text|CSS|XPath
+                    at new ElementNotFound (C:\Users\flexmobile\Documents\GitHub\AUTOMACAOLOJA\AUTOMACAO-PEDIDO-WEB\node_modules\codeceptjs\lib\helper\errors\ElementNotFound.js:14:11)
+                    at assertElementExists (C:\Users\flexmobile\Documents\GitHub\AUTOMACAOLOJA\AUTOMACAO-PEDIDO-WEB\node_modules\codeceptjs\lib\helper\WebDriver.js:2719:11)
+                    at WebDriver.fillField (C:\Users\flexmobile\Documents\GitHub\AUTOMACAOLOJA\AUTOMACAO-PEDIDO-WEB\node_modules\codeceptjs\lib\helper\WebDriver.js:1032:5)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1690806327660' status='passed' stop='1690806334660'>
+            <name>Aba "Esqueci a senha" @EsqueciMinhaSenha</name>
+            <title>Aba "Esqueci a senha" @EsqueciMinhaSenha</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Login'/>
+                <label name='tag' value='@EsqueciMinhaSenha'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690806327661' status='passed' stop='1690806327946'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806327946' status='failed' stop='1690806328956'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806328958' status='failed' stop='1690806329120'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806329120' status='failed' stop='1690806329259'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806329259' status='passed' stop='1690806334270'>
+                    <name>I wait 5</name>
+                    <title>I wait 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806334271' status='passed' stop='1690806334381'>
+                    <name>I click "Esqueci minha senha"</name>
+                    <title>I click "Esqueci minha senha"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806334381' status='passed' stop='1690806334523'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806334523' status='passed' stop='1690806334659'>
+                    <name>I fill field "E-mail", "teste.teste@gmail.com"</name>
+                    <title>I fill field "E-mail", "teste.teste@gmail.com"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1690806334725' status='passed' stop='1690806344005'>
+            <name>Login com CNPJ Inválido @LoginCNPJinvalido</name>
+            <title>Login com CNPJ Inválido @LoginCNPJinvalido</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Login'/>
+                <label name='tag' value='@LoginCNPJinvalido'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690806334726' status='passed' stop='1690806335028'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806335029' status='failed' stop='1690806336042'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806336042' status='failed' stop='1690806336120'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806336121' status='failed' stop='1690806336221'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806336221' status='passed' stop='1690806341236'>
+                    <name>I wait 5</name>
+                    <title>I wait 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806341238' status='passed' stop='1690806341515'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806341515' status='passed' stop='1690806341658'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806341659' status='failed' stop='1690806342661'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806342661' status='failed' stop='1690806342720'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806342720' status='failed' stop='1690806342820'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806342821' status='passed' stop='1690806342860'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806342860' status='passed' stop='1690806342987'>
+                    <name>I fill field "CNPJ", "000000000000"</name>
+                    <title>I fill field "CNPJ", "000000000000"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806342987' status='passed' stop='1690806343101'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806343102' status='passed' stop='1690806343171'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806343171' status='passed' stop='1690806343727'>
+                    <name>I wait for text "Cliente não cadastrado."</name>
+                    <title>I wait for text "Cliente não cadastrado."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806343727' status='passed' stop='1690806344005'>
+                    <name>I save screenshot "@LoginCNPJinvalido.png"</name>
+                    <title>I save screenshot "@LoginCNPJinvalido.png"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1690806344099' status='passed' stop='1690806353243'>
+            <name>Login com Senha Inválida @LoginSenhaInvalida</name>
+            <title>Login com Senha Inválida @LoginSenhaInvalida</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Login'/>
+                <label name='tag' value='@LoginSenhaInvalida'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690806344102' status='passed' stop='1690806344411'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806344412' status='failed' stop='1690806345420'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806345420' status='failed' stop='1690806345475'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806345475' status='failed' stop='1690806345551'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806345552' status='passed' stop='1690806350552'>
+                    <name>I wait 5</name>
+                    <title>I wait 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806350554' status='passed' stop='1690806350841'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806350841' status='passed' stop='1690806350959'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806350959' status='failed' stop='1690806351962'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806351962' status='failed' stop='1690806352016'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806352016' status='failed' stop='1690806352104'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806352104' status='passed' stop='1690806352152'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806352152' status='passed' stop='1690806352300'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806352300' status='passed' stop='1690806352398'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806352399' status='passed' stop='1690806352449'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806352449' status='passed' stop='1690806353002'>
+                    <name>I wait for text "Senha inválida."</name>
+                    <title>I wait for text "Senha inválida."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806353002' status='passed' stop='1690806353243'>
+                    <name>I save screenshot "@LoginSenhaInvalida.png"</name>
+                    <title>I save screenshot "@LoginSenhaInvalida.png"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1690806353312' status='failed' stop='1690806391852'>
+            <name>Login Correto @LoginCorreto</name>
+            <title>Login Correto @LoginCorreto</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Login'/>
+                <label name='tag' value='@LoginCorreto'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690806353313' status='passed' stop='1690806353616'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806353616' status='failed' stop='1690806354637'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806354638' status='failed' stop='1690806354716'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806354716' status='failed' stop='1690806354935'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806354935' status='passed' stop='1690806359936'>
+                    <name>I wait 5</name>
+                    <title>I wait 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806359937' status='passed' stop='1690806360213'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806360213' status='passed' stop='1690806360341'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806360341' status='failed' stop='1690806361354'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806361354' status='failed' stop='1690806361414'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806361415' status='failed' stop='1690806361500'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806361500' status='passed' stop='1690806361533'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806361533' status='passed' stop='1690806361650'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806361650' status='passed' stop='1690806361778'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806361778' status='passed' stop='1690806361837'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806361837' status='failed' stop='1690806391851'>
+                    <name>I wait for text "08070", 30</name>
+                    <title>I wait for text "08070", 30</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Main session - Last Seen Screenshot' source='02c9b4ed-c16e-4bf7-a572-226bf29b8470-attachment.png' type='image/png' size='14256'/>
+            </attachments>
+            <failure>
+                <message>element (body) is not in DOM or there is no element(body) with text "08070" after 30 sec</message>
+                <stack-trace>Error: element (body) is not in DOM or there is no element(body) with text "08070" after 30 sec
+                    at file:///C:/Users/flexmobile/Documents/GitHub/AUTOMACAOLOJA/AUTOMACAO-PEDIDO-WEB/node_modules/webdriverio/build/commands/browser/waitUntil.js:39:23
+                    at async Browser.wrapCommandFn (file:///C:/Users/flexmobile/Documents/GitHub/AUTOMACAOLOJA/AUTOMACAO-PEDIDO-WEB/node_modules/@wdio/utils/build/shim.js:72:29)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1690806392143' status='passed' stop='1690806431609'>
+            <name>Logout @Logout</name>
+            <title>Logout @Logout</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Login'/>
+                <label name='tag' value='@Logout'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690806392145' status='passed' stop='1690806392562'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806392563' status='failed' stop='1690806393567'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806393568' status='failed' stop='1690806393646'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806393646' status='failed' stop='1690806393759'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806393760' status='passed' stop='1690806398773'>
+                    <name>I wait 5</name>
+                    <title>I wait 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806398775' status='passed' stop='1690806399087'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806399087' status='passed' stop='1690806399212'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806399212' status='failed' stop='1690806400225'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806400226' status='failed' stop='1690806400274'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806400275' status='failed' stop='1690806400357'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806400357' status='passed' stop='1690806400390'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806400390' status='passed' stop='1690806400530'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806400531' status='passed' stop='1690806400638'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806400638' status='passed' stop='1690806400698'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806400698' status='passed' stop='1690806424116'>
+                    <name>I wait for text "08070", 30</name>
+                    <title>I wait for text "08070", 30</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806424116' status='passed' stop='1690806427148'>
+                    <name>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button"</name>
+                    <title>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806427148' status='passed' stop='1690806427715'>
+                    <name>I wait for text "SAIR", 30</name>
+                    <title>I wait for text "SAIR", 30</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806427715' status='passed' stop='1690806430799'>
+                    <name>I click "/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav/mat-nav-list/a[7]/div"</name>
+                    <title>I click "/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav/mat-nav-list/a[7]/div"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806430800' status='passed' stop='1690806431284'>
+                    <name>I wait for text "CNPJ", 5</name>
+                    <title>I wait for text "CNPJ", 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806431284' status='passed' stop='1690806431609'>
+                    <name>I save screenshot "@Logout.png"</name>
+                    <title>I save screenshot "@Logout.png"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

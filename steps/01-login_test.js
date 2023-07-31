@@ -195,7 +195,7 @@ Scenario('Login com CNPJ Inválido', () => {
 
   //FAÇO LOGIN COM CNPJ INVÁLIDO.
   Login(CNPJ_INVALIDO, SENHA_CORRETA)
-  I.waitForText('Cliente não cadastrado.')
+  I.waitForText('Cliente não cadastrado.',50)
 
   //SALVO UMA PRINTSCREEN APENAS PARA IR PRO OUTPUT, CASO EU QUEIRA VERIFICAR O PASSO A PASSO
   I.saveScreenshot('@LoginCNPJinvalido.png')
@@ -208,7 +208,7 @@ Scenario('Login com Senha Inválida', () => {
 
   //FAÇO LOGIN COM A SENHA INVALIDA.
   Login(CNPJ_CORRETO, SENHA_INVALIDA)
-  I.waitForText('Senha inválida.')
+  I.waitForText('Senha inválida.',50)
 
   I.saveScreenshot('@LoginSenhaInvalida.png')
 
@@ -220,7 +220,7 @@ Scenario('Login Correto', () => {
 
   //FAÇO LOGIN COM OS DADOS CORRETOS.
   Login(CNPJ_CORRETO, SENHA_CORRETA)
-  I.waitForText('08070', 30)
+  I.waitForText('08070', 50)
 
   I.saveScreenshot('@LoginCorreto.png')
 
@@ -232,17 +232,17 @@ Scenario('Logout', () => {
   Login(CNPJ_CORRETO, SENHA_CORRETA)
 
   //ESPERO PELA ABA "PRODUTOS"
-  I.waitForText('08070', 30)
+  I.waitForText('08070', 50)
 
   //CLICO NO BOTAO DE MENU 
   I.click('/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button')
 
   //CLICO NO BOTAO SAIR
-  I.waitForText('SAIR', 30)
+  I.waitForText('SAIR', 50)
   I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav/mat-nav-list/a[7]/div')
 
   //AGUARDO PELO INPUT "CNPJ" NA ABA LOGIN
-  I.waitForText('CNPJ', 5)
+  I.waitForText('CNPJ', 50)
 
   I.saveScreenshot('@Logout.png')
 

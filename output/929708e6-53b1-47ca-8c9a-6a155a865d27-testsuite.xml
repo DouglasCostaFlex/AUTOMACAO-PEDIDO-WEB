@@ -1,0 +1,871 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1690806431698' stop='1690806760001'>
+    <name>Pedido @Pedido:</name>
+    <title>Pedido @Pedido:</title>
+    <test-cases>
+        <test-case start='1690806431699' status='passed' stop='1690806488180'>
+            <name>Aba "Inicial" @AbaInicial</name>
+            <title>Aba "Inicial" @AbaInicial</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Pedido'/>
+                <label name='tag' value='@AbaInicial'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690806431701' status='passed' stop='1690806431962'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806431962' status='passed' stop='1690806432085'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806432085' status='failed' stop='1690806433100'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806433100' status='failed' stop='1690806433195'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806433195' status='failed' stop='1690806433296'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806433296' status='passed' stop='1690806433331'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806433331' status='passed' stop='1690806433469'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806433470' status='passed' stop='1690806433584'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806433584' status='passed' stop='1690806433663'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806433663' status='passed' stop='1690806457922'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806457924' status='passed' stop='1690806458071'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806458071' status='passed' stop='1690806458313'>
+                    <name>I refresh page </name>
+                    <title>I refresh page </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806458313' status='passed' stop='1690806462321'>
+                    <name>I wait 4</name>
+                    <title>I wait 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806462321' status='passed' stop='1690806462530'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/user/produtoDetalhesCarroussel/17472"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/user/produtoDetalhesCarroussel/17472"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806462530' status='passed' stop='1690806467345'>
+                    <name>I wait for text "Quantidade", 20</name>
+                    <title>I wait for text "Quantidade", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806467345' status='passed' stop='1690806467589'>
+                    <name>I fill field "Quantidade", "5"</name>
+                    <title>I fill field "Quantidade", "5"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806467589' status='passed' stop='1690806484981'>
+                    <name>I wait for text "237,25", 30</name>
+                    <title>I wait for text "237,25", 30</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806484981' status='passed' stop='1690806485091'>
+                    <name>I fill field "Quantidade", "3"</name>
+                    <title>I fill field "Quantidade", "3"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806485091' status='passed' stop='1690806487690'>
+                    <name>I wait for text "142,35", 30</name>
+                    <title>I wait for text "142,35", 30</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806487691' status='passed' stop='1690806488180'>
+                    <name>I save screenshot "@AbaInicial.png"</name>
+                    <title>I save screenshot "@AbaInicial.png"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1690806488252' status='passed' stop='1690806542110'>
+            <name>Aba "Inicial" Histórico - Pedidos já Comprados. @ItensJaComprados</name>
+            <title>Aba "Inicial" Histórico - Pedidos já Comprados. @ItensJaComprados</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Pedido'/>
+                <label name='tag' value='@ItensJaComprados'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690806488255' status='passed' stop='1690806488767'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806488768' status='passed' stop='1690806488886'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806488886' status='failed' stop='1690806489891'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806489892' status='failed' stop='1690806489955'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806489956' status='failed' stop='1690806490049'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806490049' status='passed' stop='1690806490078'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806490078' status='passed' stop='1690806490200'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806490200' status='passed' stop='1690806490292'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806490292' status='passed' stop='1690806490349'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806490349' status='passed' stop='1690806516378'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806516383' status='failed' stop='1690806518853'>
+                    <name>I click "/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/mat-toolbar/button"</name>
+                    <title>I click "/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/mat-toolbar/button"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806518853' status='passed' stop='1690806521412'>
+                    <name>I click "ITENS JÁ COMPRADOS"</name>
+                    <title>I click "ITENS JÁ COMPRADOS"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806521412' status='failed' stop='1690806541427'>
+                    <name>I wait for text "08070", 20</name>
+                    <title>I wait for text "08070", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806541428' status='passed' stop='1690806541508'>
+                    <name>I wait for text "Nenhum item encontrado para estes filtros.", 20</name>
+                    <title>I wait for text "Nenhum item encontrado para estes filtros.", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806541509' status='passed' stop='1690806541796'>
+                    <name>I click "ITENS JÁ COMPRADOS"</name>
+                    <title>I click "ITENS JÁ COMPRADOS"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806541796' status='passed' stop='1690806542110'>
+                    <name>I save screenshot "@ItensJaComprados.png"</name>
+                    <title>I save screenshot "@ItensJaComprados.png"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1690806542244' status='passed' stop='1690806584805'>
+            <name>Aba "Inicial" Filtros @Filtros</name>
+            <title>Aba "Inicial" Filtros @Filtros</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Pedido'/>
+                <label name='tag' value='@Filtros'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690806542246' status='passed' stop='1690806542711'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806542711' status='passed' stop='1690806542833'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806542833' status='failed' stop='1690806543836'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806543836' status='failed' stop='1690806543901'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806543901' status='failed' stop='1690806543996'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806543996' status='passed' stop='1690806544028'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806544028' status='passed' stop='1690806544153'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806544153' status='passed' stop='1690806544260'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806544260' status='passed' stop='1690806544322'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806544323' status='passed' stop='1690806567656'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806567659' status='failed' stop='1690806569898'>
+                    <name>I click "/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/mat-toolbar/button"</name>
+                    <title>I click "/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/mat-toolbar/button"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806569899' status='passed' stop='1690806572174'>
+                    <name>I click "PROMOÇÃO"</name>
+                    <title>I click "PROMOÇÃO"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806572174' status='passed' stop='1690806572461'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806572461' status='passed' stop='1690806573170'>
+                    <name>I click "PROMOÇÃO"</name>
+                    <title>I click "PROMOÇÃO"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806573170' status='passed' stop='1690806575564'>
+                    <name>I click "ABRAÇADEIRAS"</name>
+                    <title>I click "ABRAÇADEIRAS"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806575564' status='passed' stop='1690806576168'>
+                    <name>I wait for text "16687", 50</name>
+                    <title>I wait for text "16687", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806576168' status='passed' stop='1690806578679'>
+                    <name>I click "ABRAÇADEIRAS"</name>
+                    <title>I click "ABRAÇADEIRAS"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806578679' status='passed' stop='1690806581317'>
+                    <name>I click "ACESSÓRIOS CAIXA ACOPLADA"</name>
+                    <title>I click "ACESSÓRIOS CAIXA ACOPLADA"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806581317' status='passed' stop='1690806581926'>
+                    <name>I wait for text "17331", 50</name>
+                    <title>I wait for text "17331", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806581926' status='passed' stop='1690806584520'>
+                    <name>I click "ACESSÓRIOS CAIXA ACOPLADA"</name>
+                    <title>I click "ACESSÓRIOS CAIXA ACOPLADA"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806584520' status='passed' stop='1690806584805'>
+                    <name>I save screenshot "@Filtros.png"</name>
+                    <title>I save screenshot "@Filtros.png"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1690806584903' status='passed' stop='1690806651759'>
+            <name>Aba "CARRINHO" Continuar comprando @AbaContinuarComprando</name>
+            <title>Aba "CARRINHO" Continuar comprando @AbaContinuarComprando</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Pedido'/>
+                <label name='tag' value='@AbaContinuarComprando'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690806584905' status='passed' stop='1690806585421'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806585421' status='passed' stop='1690806585541'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806585541' status='failed' stop='1690806586557'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806586557' status='failed' stop='1690806586618'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806586619' status='failed' stop='1690806586722'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806586722' status='passed' stop='1690806586750'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806586750' status='passed' stop='1690806586878'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806586878' status='passed' stop='1690806586996'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806586996' status='passed' stop='1690806587056'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806587056' status='passed' stop='1690806611262'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806611265' status='passed' stop='1690806611542'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/user/produtoDetalhesCarroussel/17472"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/user/produtoDetalhesCarroussel/17472"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806611542' status='passed' stop='1690806614497'>
+                    <name>I wait for text "Quantidade", 20</name>
+                    <title>I wait for text "Quantidade", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806614497' status='passed' stop='1690806618499'>
+                    <name>I wait 4</name>
+                    <title>I wait 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806618499' status='passed' stop='1690806618600'>
+                    <name>I fill field "Quantidade", "5"</name>
+                    <title>I fill field "Quantidade", "5"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806618600' status='passed' stop='1690806622601'>
+                    <name>I wait 4</name>
+                    <title>I wait 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806622602' status='passed' stop='1690806623264'>
+                    <name>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/div/a"</name>
+                    <title>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/div/a"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806623264' status='passed' stop='1690806627274'>
+                    <name>I wait 4</name>
+                    <title>I wait 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806627274' status='passed' stop='1690806629286'>
+                    <name>I wait 2</name>
+                    <title>I wait 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806629286' status='passed' stop='1690806629296'>
+                    <name>I scroll page to bottom </name>
+                    <title>I scroll page to bottom </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806629296' status='passed' stop='1690806629364'>
+                    <name>I click "CONTINUAR COMPRANDO"</name>
+                    <title>I click "CONTINUAR COMPRANDO"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806629364' status='passed' stop='1690806630376'>
+                    <name>I wait 1</name>
+                    <title>I wait 1</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806630376' status='passed' stop='1690806630386'>
+                    <name>I scroll page to top </name>
+                    <title>I scroll page to top </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806630386' status='passed' stop='1690806651414'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806651414' status='passed' stop='1690806651759'>
+                    <name>I save screenshot "@AbaContinuarComprando.png"</name>
+                    <title>I save screenshot "@AbaContinuarComprando.png"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1690806651816' status='passed' stop='1690806717641'>
+            <name>Aba "CARRINHO" Solicitar Orçamento @SolicitarOrcamento</name>
+            <title>Aba "CARRINHO" Solicitar Orçamento @SolicitarOrcamento</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Pedido'/>
+                <label name='tag' value='@SolicitarOrcamento'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690806651819' status='passed' stop='1690806652314'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806652315' status='passed' stop='1690806652431'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806652431' status='failed' stop='1690806653445'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806653446' status='failed' stop='1690806653511'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806653512' status='failed' stop='1690806653633'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806653633' status='passed' stop='1690806653672'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806653672' status='passed' stop='1690806653824'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806653824' status='passed' stop='1690806653941'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806653941' status='passed' stop='1690806654009'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806654009' status='passed' stop='1690806674957'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806674961' status='passed' stop='1690806675200'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/user/produtoDetalhesCarroussel/17472"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/user/produtoDetalhesCarroussel/17472"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806675200' status='passed' stop='1690806677486'>
+                    <name>I wait for text "Quantidade", 20</name>
+                    <title>I wait for text "Quantidade", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806677486' status='passed' stop='1690806681496'>
+                    <name>I wait 4</name>
+                    <title>I wait 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806681496' status='passed' stop='1690806681584'>
+                    <name>I fill field "Quantidade", "5"</name>
+                    <title>I fill field "Quantidade", "5"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806681584' status='passed' stop='1690806685587'>
+                    <name>I wait 4</name>
+                    <title>I wait 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806685587' status='passed' stop='1690806686225'>
+                    <name>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/div/a"</name>
+                    <title>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/div/a"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806686226' status='passed' stop='1690806690234'>
+                    <name>I wait 4</name>
+                    <title>I wait 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806690234' status='passed' stop='1690806692235'>
+                    <name>I wait 2</name>
+                    <title>I wait 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806692235' status='passed' stop='1690806692245'>
+                    <name>I scroll page to bottom </name>
+                    <title>I scroll page to bottom </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806692245' status='passed' stop='1690806692317'>
+                    <name>I click "SOLICITAR ORÇAMENTO"</name>
+                    <title>I click "SOLICITAR ORÇAMENTO"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806692317' status='passed' stop='1690806694365'>
+                    <name>I wait for text "Orçamento solicitado com sucesso", 50</name>
+                    <title>I wait for text "Orçamento solicitado com sucesso", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806694365' status='passed' stop='1690806694430'>
+                    <name>I click "SOLICITAR NOVO ORÇAMENTO"</name>
+                    <title>I click "SOLICITAR NOVO ORÇAMENTO"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806694430' status='passed' stop='1690806715576'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806715577' status='passed' stop='1690806715806'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/user/pedidos"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/user/pedidos"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806715806' status='passed' stop='1690806717449'>
+                    <name>I wait for text "237,25", 50</name>
+                    <title>I wait for text "237,25", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806717449' status='passed' stop='1690806717640'>
+                    <name>I save screenshot "@SolicitarOrcamento.png"</name>
+                    <title>I save screenshot "@SolicitarOrcamento.png"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1690806717700' status='failed' stop='1690806759698'>
+            <name>Aba "CARRINHO" Finalizar pedido @AbaCarrinhoFinalizarPedido</name>
+            <title>Aba "CARRINHO" Finalizar pedido @AbaCarrinhoFinalizarPedido</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Pedido'/>
+                <label name='tag' value='@AbaCarrinhoFinalizarPedido'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690806717703' status='passed' stop='1690806717964'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806717964' status='passed' stop='1690806718086'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806718086' status='failed' stop='1690806719092'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806719092' status='failed' stop='1690806719156'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806719156' status='failed' stop='1690806719260'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806719260' status='passed' stop='1690806719296'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806719296' status='passed' stop='1690806719464'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806719465' status='passed' stop='1690806719592'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806719593' status='passed' stop='1690806719655'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806719655' status='passed' stop='1690806741671'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806741675' status='passed' stop='1690806741830'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/user/produtoDetalhesCarroussel/17472"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/user/produtoDetalhesCarroussel/17472"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806741830' status='passed' stop='1690806744538'>
+                    <name>I wait for text "Quantidade", 20</name>
+                    <title>I wait for text "Quantidade", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806744538' status='passed' stop='1690806748547'>
+                    <name>I wait 4</name>
+                    <title>I wait 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806748547' status='passed' stop='1690806748637'>
+                    <name>I fill field "Quantidade", "5"</name>
+                    <title>I fill field "Quantidade", "5"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806748637' status='passed' stop='1690806752651'>
+                    <name>I wait 4</name>
+                    <title>I wait 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806752651' status='passed' stop='1690806753421'>
+                    <name>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/div/a"</name>
+                    <title>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/div/a"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806753421' status='passed' stop='1690806757432'>
+                    <name>I wait 4</name>
+                    <title>I wait 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806757432' status='passed' stop='1690806759449'>
+                    <name>I wait 2</name>
+                    <title>I wait 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806759449' status='passed' stop='1690806759459'>
+                    <name>I scroll page to bottom </name>
+                    <title>I scroll page to bottom </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806759459' status='passed' stop='1690806759605'>
+                    <name>I click "Forma Pgto."</name>
+                    <title>I click "Forma Pgto."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690806759605' status='failed' stop='1690806759698'>
+                    <name>I click "//*[@id="mat-option-0"]"</name>
+                    <title>I click "//*[@id="mat-option-0"]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Main session - Last Seen Screenshot' source='d5d7befe-4c75-4749-9a71-7019bd36a364-attachment.png' type='image/png' size='91726'/>
+            </attachments>
+            <failure>
+                <message>element not interactable
+                  (Session info: chrome=115.0.5790.110)</message>
+                <stack-trace>element not interactable: element not interactable
+                  (Session info: chrome=115.0.5790.110)
+                    at getErrorFromResponseBody (file:///C:/Users/flexmobile/Documents/GitHub/AUTOMACAOLOJA/AUTOMACAO-PEDIDO-WEB/node_modules/webdriver/build/utils.js:194:12)
+                    at NodeJSRequest._request (file:///C:/Users/flexmobile/Documents/GitHub/AUTOMACAOLOJA/AUTOMACAO-PEDIDO-WEB/node_modules/webdriver/build/request/index.js:164:23)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async Browser.wrapCommandFn (file:///C:/Users/flexmobile/Documents/GitHub/AUTOMACAOLOJA/AUTOMACAO-PEDIDO-WEB/node_modules/@wdio/utils/build/shim.js:72:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
