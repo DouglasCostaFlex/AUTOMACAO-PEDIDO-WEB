@@ -8,7 +8,7 @@ const client = new Client({
     port: 5432,
 });
 
-Scenario('Encerrar conexão com o banco ', () => {
+Scenario('Encerrar conexão com o banco ', async () => {
 
 
     //FECHO A CONEXAO COM O BANCO DE DADOS
@@ -21,6 +21,9 @@ Scenario('Encerrar conexão com o banco ', () => {
                 console.error('Erro ao fechar a conexão com o banco de dados:', err);
             });
     });
+
+    //ENCERRO O PROGRAMA.
+    await process.exit(0);
 
 })
 
