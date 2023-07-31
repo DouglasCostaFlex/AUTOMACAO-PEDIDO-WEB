@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1690812996319' stop='1690813000367'>
+    <name>EncerrarBanco @EncerrarBanco:</name>
+    <title>EncerrarBanco @EncerrarBanco:</title>
+    <test-cases>
+        <test-case start='1690813000209' status='passed' stop='1690813000221'>
+            <name>Encerrar conexão com o banco </name>
+            <title>Encerrar conexão com o banco </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@EncerrarBanco'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

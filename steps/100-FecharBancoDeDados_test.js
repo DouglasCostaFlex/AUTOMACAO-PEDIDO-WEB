@@ -12,7 +12,7 @@ Scenario('Encerrar conexão com o banco ', () => {
 
 
     //FECHO A CONEXAO COM O BANCO DE DADOS
-    tryTo(() => {
+
         client.end()
             .then(() => {
                 console.log('Conexão encerrada.');
@@ -20,7 +20,6 @@ Scenario('Encerrar conexão com o banco ', () => {
             .catch((err) => {
                 console.error('Erro ao fechar a conexão com o banco de dados:', err);
             });
-    });
-
+    
 })
 
