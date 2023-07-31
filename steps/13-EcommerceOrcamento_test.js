@@ -62,7 +62,7 @@ Before(() => {
 })
 
 
-Scenario('E-Commerce com Flag apenas Orçamento', async ( ) => {
+Scenario('E-Commerce com Flag apenas Orçamento', () => {
 
     // DESATIVO O CLIENTE
     client.query("update cliente set fl_ecommerce  = '1' where cd_cliente = '51668'")
@@ -103,13 +103,11 @@ Scenario('E-Commerce com Flag apenas Orçamento', async ( ) => {
     //ESPERO PELA MENSAGEM "ORÇAMENTO SOLICITAR COM SUCESSO"
     I.waitForText('Orçamento solicitado com sucesso', 50)
 
-    //ABRO O REPORTER
-     await AbrirAllure();
 
 });
 
 
-AfterSuite(() => {
+After(() => {
 
     // ATIVO O CLIENTE
     client.query("update cliente set fl_ecommerce  = '2' where cd_cliente = '51668'")
@@ -121,8 +119,7 @@ AfterSuite(() => {
         })
 
 
-
-
-
+    //ABRO O REPORTER
+    AbrirAllure();
 
 });

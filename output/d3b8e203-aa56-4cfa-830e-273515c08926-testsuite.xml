@@ -1,0 +1,81 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1690822487583' stop='1690822497305'>
+    <name>ClienteInativo @ClienteInativo:</name>
+    <title>ClienteInativo @ClienteInativo:</title>
+    <test-cases>
+        <test-case start='1690822494921' status='passed' stop='1690822497246'>
+            <name>Cliente Inativo @ClienteInativo</name>
+            <title>Cliente Inativo @ClienteInativo</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@ClienteInativo'/>
+                <label name='tag' value='@ClienteInativo'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690822494942' status='passed' stop='1690822495197'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690822495198' status='passed' stop='1690822495352'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690822495354' status='passed' stop='1690822495412'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690822495412' status='passed' stop='1690822495502'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690822495502' status='passed' stop='1690822496288'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690822496288' status='passed' stop='1690822496394'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690822496394' status='passed' stop='1690822496533'>
+                    <name>I fill field "CNPJ", "23.928.274/0001-40"</name>
+                    <title>I fill field "CNPJ", "23.928.274/0001-40"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690822496533' status='passed' stop='1690822496632'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690822496632' status='passed' stop='1690822496696'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690822496696' status='passed' stop='1690822497245'>
+                    <name>I wait for text "Cliente inativo.", 50</name>
+                    <title>I wait for text "Cliente inativo.", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

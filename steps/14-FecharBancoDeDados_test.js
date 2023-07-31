@@ -9,19 +9,22 @@ const client = new Client({
 });
 
 
-Scenario('Encerrar conexão com o banco ', () => {
+Scenario('Encerrar conexão com o banco ', async () => {
 
 
     //FECHO A CONEXAO COM O BANCO DE DADOS
 
-        client.end()
-            .then(() => {
-                console.log('Conexão encerrada.');
-            })
-            .catch((err) => {
-                console.error('Erro ao fechar a conexão com o banco de dados:', err);
-            });
+    client.end()
+        .then(() => {
+            console.log('Conexão encerrada.');
+        })
+        .catch((err) => {
+            console.error('Erro ao fechar a conexão com o banco de dados:', err);
+        });
     
+        
+    //ENCERRO O PROGRAMA.
+    await process.exit(0);
 })
 
 
