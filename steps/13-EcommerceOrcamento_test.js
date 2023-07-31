@@ -119,7 +119,7 @@ After(() => {
         })
 
 
-    //ABRO O REPORTER
-    AbrirAllure();
+    // //ABRO O REPORTER
+    // AbrirAllure();
 
 });
