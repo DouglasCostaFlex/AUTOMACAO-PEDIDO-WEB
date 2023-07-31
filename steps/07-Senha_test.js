@@ -49,7 +49,4 @@ Scenario('Trocar Senha', () => {
     I.waitForText('Senha alterada com sucesso',5)
 
 
-
-
-   
 }).tag('TrocarSenha')

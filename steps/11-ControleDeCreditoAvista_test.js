@@ -83,7 +83,6 @@ Scenario('Controle de crédito Avista', () => {
     I.click('FINALIZAR PEDIDO')
     I.waitForText('Liberado somente para compras à vista.')
 
-
 });
 
 
