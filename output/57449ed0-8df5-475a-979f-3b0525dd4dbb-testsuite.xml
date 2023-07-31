@@ -1,0 +1,225 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1690566955873' stop='1690567001837'>
+    <name>Senhas @Senhas:</name>
+    <title>Senhas @Senhas:</title>
+    <test-cases>
+        <test-case start='1690566955873' status='passed' stop='1690567001792'>
+            <name>Trocar Senha @TrocarSenha</name>
+            <title>Trocar Senha @TrocarSenha</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@Senhas'/>
+                <label name='tag' value='@TrocarSenha'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690566955874' status='passed' stop='1690566956133'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566956133' status='passed' stop='1690566956250'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566956251' status='failed' stop='1690566957256'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566957257' status='failed' stop='1690566957303'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566957303' status='failed' stop='1690566957373'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566957374' status='passed' stop='1690566957404'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566957404' status='passed' stop='1690566957576'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566957576' status='passed' stop='1690566957693'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566957693' status='passed' stop='1690566957743'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566957744' status='passed' stop='1690566972829'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566972832' status='passed' stop='1690566975243'>
+                    <name>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button"</name>
+                    <title>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566975243' status='passed' stop='1690566977700'>
+                    <name>I click "ALTERAR"</name>
+                    <title>I click "ALTERAR"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566977700' status='passed' stop='1690566977845'>
+                    <name>I fill field "Senha Antiga", "48303523"</name>
+                    <title>I fill field "Senha Antiga", "48303523"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566977845' status='passed' stop='1690566977955'>
+                    <name>I fill field "Senha Nova", "Flex48303523"</name>
+                    <title>I fill field "Senha Nova", "Flex48303523"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566977955' status='passed' stop='1690566978056'>
+                    <name>I fill field "Confirme a nova senha", "Flex48303523"</name>
+                    <title>I fill field "Confirme a nova senha", "Flex48303523"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566978056' status='passed' stop='1690566978109'>
+                    <name>I click "ALTERAR"</name>
+                    <title>I click "ALTERAR"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566978109' status='passed' stop='1690566978643'>
+                    <name>I wait for text "Senha alterada com sucesso", 30</name>
+                    <title>I wait for text "Senha alterada com sucesso", 30</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566978643' status='passed' stop='1690566979052'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566979052' status='passed' stop='1690566979182'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566979182' status='failed' stop='1690566980188'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566980188' status='failed' stop='1690566980246'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566980246' status='failed' stop='1690566980344'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566980344' status='passed' stop='1690566980373'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566980374' status='passed' stop='1690566980475'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566980475' status='passed' stop='1690566980577'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566980577' status='passed' stop='1690566980639'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566980639' status='passed' stop='1690566996194'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566996194' status='passed' stop='1690566998478'>
+                    <name>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button"</name>
+                    <title>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566998479' status='passed' stop='1690567000842'>
+                    <name>I click "ALTERAR"</name>
+                    <title>I click "ALTERAR"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690567000842' status='passed' stop='1690567000964'>
+                    <name>I fill field "Senha Antiga", "Flex48303523"</name>
+                    <title>I fill field "Senha Antiga", "Flex48303523"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690567000964' status='passed' stop='1690567001078'>
+                    <name>I fill field "Senha Nova", "48303523"</name>
+                    <title>I fill field "Senha Nova", "48303523"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690567001078' status='passed' stop='1690567001180'>
+                    <name>I fill field "Confirme a nova senha", "48303523"</name>
+                    <title>I fill field "Confirme a nova senha", "48303523"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690567001180' status='passed' stop='1690567001246'>
+                    <name>I click "ALTERAR"</name>
+                    <title>I click "ALTERAR"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690567001246' status='passed' stop='1690567001792'>
+                    <name>I wait for text "Senha alterada com sucesso", 50</name>
+                    <title>I wait for text "Senha alterada com sucesso", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

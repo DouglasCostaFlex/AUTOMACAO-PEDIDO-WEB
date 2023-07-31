@@ -49,7 +49,7 @@ module.exports = {
 
     I.amOnPage(Pagina_Produto_16410_Wildfly2)
     I.waitForText('Quantidade', 20)
-
+    I.wait(4)
     I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/div[2]/div/div[9]/produto/mat-card/mat-card-actions/button[1]')
 
   },
@@ -59,22 +59,25 @@ module.exports = {
   //ESSE METODO ADICIONO APENAS UM PRODUTO COM O VALOR DE 50, ABAIXO O PEDIDO MINIMO.
   CriarPedidoAbaixoDe100() {
 
+    I.wait(4)
     I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/div[2]/div/div[3]/produto/mat-card/mat-card-actions/button[2]')
-
+    I.wait(4)
     //VOU PARA O CARRINHO
     I.click('/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/div/a')
     I.wait(2)
   },
 
   CriarPedidoAbaixoDe200() {
-
+    I.wait(4)
     I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/div[2]/div/div[3]/produto/mat-card/mat-card-actions/button[2]')
+    I.wait(4)
     I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/div[2]/div/div[3]/produto/mat-card/mat-card-actions/button[2]')
 
 
     //VOU PARA O CARRINHO
+    I.wait(4)
     I.click('/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/div/a')
-    I.wait(2)
+    I.wait(4)
   },
 
   //ESSE METODO CRIA UM PEDIDO COM UM ITEM E VAI PARA O CARRINHO
@@ -83,13 +86,16 @@ module.exports = {
     //ADICIONO NO CARRINHO O 16410 QUE DA NO TOTAL 237,25
     I.amOnPage(Pagina_Produto_16410_Wildfly2)
     I.waitForText('Quantidade', 20)
+    I.wait(4)
     I.fillField('Quantidade','5')
 
 
 
 
     //VOU PARA O CARRINHO
+    I.wait(4)
     I.click('/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/div/a')
+    I.wait(4)
     I.wait(2)
 
   },
@@ -98,7 +104,9 @@ module.exports = {
   //ADICIONO AO CARRINHO O PRODUTO "ACABAMENTO MONOCOMANDO CHUVEIRO NEXUS 3/4POL CROMADO DOCOL" +2 PRODUTOS 
   CriarPedidoItem2() {
 
+    I.wait(4)
     I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/div[2]/div/div[1]/produto/mat-card/mat-card-actions/button[2]')
+    I.wait(4)
 
     //VOU PARA O CARRINHO
     I.click('/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/div/a')
@@ -125,12 +133,13 @@ module.exports = {
 
   //USAR NA ABA CARRINHO DENTRO DO PRODUTO
   AdicionarQuantidade() {
-
+    I.wait(4)
     I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produto-detalhe-component/div/div[1]/form/div/div/div[1]/div[5]/button[2]')
   },
 
   DiminuirQuantidade() {
 
+    I.wait(4)
     I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produto-detalhe-component/div/div[1]/form/div/div/div[1]/div[5]/button[1]')
 
   },

@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1690564835973' stop='1690564835973'>
+    <name>Pedido @Pedido:</name>
+    <title>Pedido @Pedido:</title>
+    <test-cases>
+        <test-case start='1690564835973' status='pending' stop='1690564835973'>
+            <name>Aba "CARRINHO" Solicitar Orçamento @SolicitarOrcamento</name>
+            <title>Aba "CARRINHO" Solicitar Orçamento @SolicitarOrcamento</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Skipped due to failure in 'before' hook</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,183 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1690566935009' stop='1690566955869'>
+    <name>Financeiro Historico @FinanceiroHistorico:</name>
+    <title>Financeiro Historico @FinanceiroHistorico:</title>
+    <test-cases>
+        <test-case start='1690566935009' status='passed' stop='1690566955823'>
+            <name>Aba "Financeiro" Detalhes @FinanceiroDetalhes</name>
+            <title>Aba "Financeiro" Detalhes @FinanceiroDetalhes</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@FinanceiroHistorico'/>
+                <label name='tag' value='@FinanceiroDetalhes'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690566935012' status='passed' stop='1690566935339'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566935339' status='passed' stop='1690566935468'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566935468' status='failed' stop='1690566936479'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566936479' status='failed' stop='1690566936538'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566936538' status='failed' stop='1690566936630'>
+                    <name>I click "Ir para 192.168.1.128 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.128 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566936630' status='passed' stop='1690566936667'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566936667' status='passed' stop='1690566936792'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566936792' status='passed' stop='1690566936893'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566936893' status='passed' stop='1690566936954'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566936955' status='passed' stop='1690566951929'>
+                    <name>I wait for text "08070", 50</name>
+                    <title>I wait for text "08070", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566951932' status='passed' stop='1690566953947'>
+                    <name>I wait 2</name>
+                    <title>I wait 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566953948' status='passed' stop='1690566954156'>
+                    <name>I am on page "https://192.168.1.128:9090/pedidoweb/user/financeiro"</name>
+                    <title>I am on page "https://192.168.1.128:9090/pedidoweb/user/financeiro"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566954156' status='passed' stop='1690566955201'>
+                    <name>I wait for text "DETALHES", 50</name>
+                    <title>I wait for text "DETALHES", 50</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955201' status='passed' stop='1690566955317'>
+                    <name>I click "/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/historico-financeiro/div/mat-table/mat-row[1]/mat-cell[6]/a"</name>
+                    <title>I click "/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/historico-financeiro/div/mat-table/mat-row[1]/mat-cell[6]/a"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955317' status='passed' stop='1690566955360'>
+                    <name>I wait for text "Detalhes", 20</name>
+                    <title>I wait for text "Detalhes", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955360' status='passed' stop='1690566955398'>
+                    <name>I wait for text "Código filial: 1", 20</name>
+                    <title>I wait for text "Código filial: 1", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955398' status='passed' stop='1690566955436'>
+                    <name>I wait for text "Código Cliente: 2241", 20</name>
+                    <title>I wait for text "Código Cliente: 2241", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955436' status='passed' stop='1690566955480'>
+                    <name>I wait for text "Nr documento: 512034", 20</name>
+                    <title>I wait for text "Nr documento: 512034", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955480' status='passed' stop='1690566955521'>
+                    <name>I wait for text "Data emissão: 03/08/2021", 20</name>
+                    <title>I wait for text "Data emissão: 03/08/2021", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955521' status='passed' stop='1690566955558'>
+                    <name>I wait for text "Linha digitavel: 00190.00009 01526.510001 00467.475174 4 87290000014830", 20</name>
+                    <title>I wait for text "Linha digitavel: 00190.00009 01526.510001 00467.475174 4 87290000014830", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955558' status='passed' stop='1690566955594'>
+                    <name>I wait for text "Valor nominal: R$ 148,30", 20</name>
+                    <title>I wait for text "Valor nominal: R$ 148,30", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955594' status='passed' stop='1690566955631'>
+                    <name>I wait for text "Chave de Acesso NFe: 42210875384404000125550040005120341116285150", 20</name>
+                    <title>I wait for text "Chave de Acesso NFe: 42210875384404000125550040005120341116285150", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955632' status='passed' stop='1690566955669'>
+                    <name>I wait for text "Situação: Quitado", 20</name>
+                    <title>I wait for text "Situação: Quitado", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955669' status='passed' stop='1690566955708'>
+                    <name>I wait for text "Forma de pagamento: BOLETO BANCO DO BRASIL", 20</name>
+                    <title>I wait for text "Forma de pagamento: BOLETO BANCO DO BRASIL", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955708' status='passed' stop='1690566955746'>
+                    <name>I wait for text "Nosso número: 0000467475", 20</name>
+                    <title>I wait for text "Nosso número: 0000467475", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955746' status='passed' stop='1690566955787'>
+                    <name>I wait for text "Número documento: 512034-1", 20</name>
+                    <title>I wait for text "Número documento: 512034-1", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690566955787' status='passed' stop='1690566955823'>
+                    <name>I wait for text "Valor saldo: R$ 0,00", 20</name>
+                    <title>I wait for text "Valor saldo: R$ 0,00", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
