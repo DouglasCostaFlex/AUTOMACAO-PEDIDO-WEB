@@ -1,12 +1,13 @@
 Feature('E-commerce apenas orçamento').tag('EcommerceOrcamento');
 
-const { 
+const { AbrirAllure } = require("../pages/AbrirAllure");
+const {
 
     Pagina_Login_Wildfly1,
     Pagina_Historico_Pedido_Wildfly1,
     Pagina_Historico_Financeiro_Wildfly1,
     Pagina_Produto_16410_Wildfly1,
-    Pagina_Produto_08070_Wildfly1 ,
+    Pagina_Produto_08070_Wildfly1,
     Pagina_Carrinho_Finalizar_Wildfly1,
 
 
@@ -24,7 +25,7 @@ const {
     Pagina_Produto_16410_Wildfly3,
     Pagina_Produto_08070_Wildfly3,
     Pagina_Carrinho_Finalizar_Wildfly3
-    
+
 } = require("../pages/LinksExternos");
 
 const { Login } = require("../pages/login_page");
@@ -36,7 +37,7 @@ const CNPJ_CORRETO = '23.928.274/0001-40'
 const SENHA_CORRETA = '48303523'
 
 const { Client } = require('pg');
-const { AbrirAllure } = require("../pages/AbrirAllure");
+
 
 const client = new Client({
     user: 'flextotal',
@@ -61,7 +62,7 @@ Before(() => {
 })
 
 
-Scenario('E-Commerce com Flag apenas Orçamento', () => {
+Scenario('E-Commerce com Flag apenas Orçamento', async ( ) => {
 
     // DESATIVO O CLIENTE
     client.query("update cliente set fl_ecommerce  = '1' where cd_cliente = '51668'")
@@ -102,24 +103,25 @@ Scenario('E-Commerce com Flag apenas Orçamento', () => {
     //ESPERO PELA MENSAGEM "ORÇAMENTO SOLICITAR COM SUCESSO"
     I.waitForText('Orçamento solicitado com sucesso', 50)
 
+    //ABRO O REPORTER
+     await AbrirAllure();
 
 });
 
 
 AfterSuite(() => {
 
-        // ATIVO O CLIENTE
-        client.query("update cliente set fl_ecommerce  = '2' where cd_cliente = '51668'")
-            .then((result) => {
-                console.log(' Trocado para Pedido/orçamento')
-            })
-            .catch((err) => {
-                console.error('Erro ao trocar para Trocado para Pedido/orçamento:', err);
-            })
-    
+    // ATIVO O CLIENTE
+    client.query("update cliente set fl_ecommerce  = '2' where cd_cliente = '51668'")
+        .then((result) => {
+            console.log(' Trocado para Pedido/orçamento')
+        })
+        .catch((err) => {
+            console.error('Erro ao trocar para Trocado para Pedido/orçamento:', err);
+        })
 
-     //ABRO O REPORTER
-     AbrirAllure();
+
+
 
 
 

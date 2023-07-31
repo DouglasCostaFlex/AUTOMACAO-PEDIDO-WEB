@@ -8,6 +8,7 @@ const client = new Client({
     port: 5432,
 });
 
+
 Scenario('Encerrar conexão com o banco ', () => {
 
 
@@ -22,4 +23,6 @@ Scenario('Encerrar conexão com o banco ', () => {
             });
     
 })
+
+
 
