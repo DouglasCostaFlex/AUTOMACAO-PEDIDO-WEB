@@ -93,6 +93,6 @@ AfterSuite(() => {
             })
     })
 
-    AbrirAllure();
+    // AbrirAllure();
 
 });
