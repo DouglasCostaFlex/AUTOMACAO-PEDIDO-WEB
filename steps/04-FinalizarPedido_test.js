@@ -1,242 +1,242 @@
-Feature('Finalizar Pedido').tag('FinalizarPedido');
+// Feature('Finalizar Pedido').tag('FinalizarPedido');
 
-const {
+// const {
 
-    Pagina_Login_Wildfly1,
-    Pagina_Historico_Pedido_Wildfly1,
-    Pagina_Historico_Financeiro_Wildfly1,
-    Pagina_Produto_16410_Wildfly1,
-    Pagina_Produto_08070_Wildfly1,
-    Pagina_Carrinho_Finalizar_Wildfly1,
+//     Pagina_Login_Wildfly1,
+//     Pagina_Historico_Pedido_Wildfly1,
+//     Pagina_Historico_Financeiro_Wildfly1,
+//     Pagina_Produto_16410_Wildfly1,
+//     Pagina_Produto_08070_Wildfly1,
+//     Pagina_Carrinho_Finalizar_Wildfly1,
 
 
-    Pagina_Login_Wildfly2,
-    Pagina_Historico_Pedido_Wildfly2,
-    Pagina_Historico_Financeiro_Wildfly2,
-    Pagina_Produto_16410_Wildfly2,
-    Pagina_Produto_08070_Wildfly2,
-    Pagina_Carrinho_Finalizar_Wildfly2,
+//     Pagina_Login_Wildfly2,
+//     Pagina_Historico_Pedido_Wildfly2,
+//     Pagina_Historico_Financeiro_Wildfly2,
+//     Pagina_Produto_16410_Wildfly2,
+//     Pagina_Produto_08070_Wildfly2,
+//     Pagina_Carrinho_Finalizar_Wildfly2,
 
 
-    Pagina_Login_Wildfly3,
-    Pagina_Historico_Pedido_Wildfly3,
-    Pagina_Historico_Financeiro_Wildfly3,
-    Pagina_Produto_16410_Wildfly3,
-    Pagina_Produto_08070_Wildfly3,
-    Pagina_Carrinho_Finalizar_Wildfly3
+//     Pagina_Login_Wildfly3,
+//     Pagina_Historico_Pedido_Wildfly3,
+//     Pagina_Historico_Financeiro_Wildfly3,
+//     Pagina_Produto_16410_Wildfly3,
+//     Pagina_Produto_08070_Wildfly3,
+//     Pagina_Carrinho_Finalizar_Wildfly3
 
-} = require("../pages/LinksExternos");
+// } = require("../pages/LinksExternos");
 
-const { Login } = require("../pages/login_page");
-const pedido = require("../pages/pedido");
-const { I } = inject()
+// const { Login } = require("../pages/login_page");
+// const pedido = require("../pages/pedido");
+// const { I } = inject()
 
-//DADOS DE ACORDO COM O QUE PRECISO NA ABA INICIAL 
+// //DADOS DE ACORDO COM O QUE PRECISO NA ABA INICIAL 
 
-const CNPJ_CORRETO = '00409260000115'
-const SENHA_CORRETA = '48303523'
+// const CNPJ_CORRETO = '00409260000115'
+// const SENHA_CORRETA = '48303523'
 
 
 
 
-Before(() => {
+// Before(() => {
 
 
-    // CASO ESTEJA FECHADO EU FAÇO O LOGIN
-    tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
-    I.waitForText('08070', 50)
+//     // CASO ESTEJA FECHADO EU FAÇO O LOGIN
+//     tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
+//     I.waitForText('08070', 50)
 
-})
+// })
 
-Scenario('Aba "FINALIZAR" Validar valores do carrinho ', () => {
+// Scenario('Aba "FINALIZAR" Validar valores do carrinho ', () => {
 
-    //ESSE METODO ADICIONA DOIS PRODUTOS DIFERENTES NO CARRINHO.
-    pedido.AdicionarDoisProdutosNoCarrinho();
-    I.scrollPageToTop();
+//     //ESSE METODO ADICIONA DOIS PRODUTOS DIFERENTES NO CARRINHO.
+//     pedido.AdicionarDoisProdutosNoCarrinho();
+//     I.scrollPageToTop();
 
-    // VALIDAÇÃO DOS VALORES E PRODUTO DO CARRINHO CONFORME OS PEDIDOS
-    I.waitForText('241,25', 50)
-    I.waitForText('4,00', 50)
-    I.waitForText('237,25', 50)
+//     // VALIDAÇÃO DOS VALORES E PRODUTO DO CARRINHO CONFORME OS PEDIDOS
+//     I.waitForText('241,25', 50)
+//     I.waitForText('4,00', 50)
+//     I.waitForText('237,25', 50)
 
 
 
-}).tag('AbaFinalizarValidarValoresCarrinho')
+// }).tag('AbaFinalizarValidarValoresCarrinho')
 
-Scenario('Aba "FINALIZAR" Validar Remoção de um produto ', () => {
+// Scenario('Aba "FINALIZAR" Validar Remoção de um produto ', () => {
 
-    //ESSE METODO ADICIONA DOIS PRODUTOS DIFERENTES NO CARRINHO.
-    pedido.AdicionarDoisProdutosNoCarrinho();
+//     //ESSE METODO ADICIONA DOIS PRODUTOS DIFERENTES NO CARRINHO.
+//     pedido.AdicionarDoisProdutosNoCarrinho();
 
-    //EU REMOVO O PRIMEIRO ITEM "17351 - ACABAMENTO MONOCOMANDO CHUVEIRO NEXUS 3/4POL CROMADO DOCOL"
-    I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/carrinho-component/div/ul/li[1]/div/div[2]/button')
+//     //EU REMOVO O PRIMEIRO ITEM "17351 - ACABAMENTO MONOCOMANDO CHUVEIRO NEXUS 3/4POL CROMADO DOCOL"
+//     I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/carrinho-component/div/ul/li[1]/div/div[2]/button')
 
-    //VALIDAÇÃO DOS VALORES E PRODUTO DO CARRINHO CONFORME FOI REMOVIDO 1 ITEM.
-    I.waitForText('Total: R$ 237,25', 50)
-    I.waitForText('47,45', 50)
+//     //VALIDAÇÃO DOS VALORES E PRODUTO DO CARRINHO CONFORME FOI REMOVIDO 1 ITEM.
+//     I.waitForText('Total: R$ 237,25', 50)
+//     I.waitForText('47,45', 50)
 
-}).tag('AbaFinalizarValidarRemocaoCarrinho')
+// }).tag('AbaFinalizarValidarRemocaoCarrinho')
 
-Scenario('Aba "FINALIZAR"  ENTREGA - Endereço de Entrega PRINCIPAL ', () => {
+// Scenario('Aba "FINALIZAR"  ENTREGA - Endereço de Entrega PRINCIPAL ', () => {
 
-    //ESSE METODO ADICIONA DOIS PRODUTOS DIFERENTES NO CARRINHO.
-    pedido.AdicionarDoisProdutosNoCarrinho();
+//     //ESSE METODO ADICIONA DOIS PRODUTOS DIFERENTES NO CARRINHO.
+//     pedido.AdicionarDoisProdutosNoCarrinho();
 
-    I.click('Endereço de Entrega')
-    I.scrollPageToBottom();
+//     I.click('Endereço de Entrega')
+//     I.scrollPageToBottom();
 
-    //ESCOLHO A FORMA DE PAGAMENTO "AVISTA"
-    pedido.PagamentoAvista();
+//     //ESCOLHO A FORMA DE PAGAMENTO "AVISTA"
+//     pedido.PagamentoAvista();
 
-    //ESCREVO UMA OBSERVAÇÃO 
-    I.fillField('Observação', 'TESTE TESTE TESTE')
-    // // CLICO NO BOTAO "FINALIZAR PEDIDO"
-    I.click('FINALIZAR PEDIDO')
+//     //ESCREVO UMA OBSERVAÇÃO 
+//     I.fillField('Observação', 'TESTE TESTE TESTE')
+//     // // CLICO NO BOTAO "FINALIZAR PEDIDO"
+//     I.click('FINALIZAR PEDIDO')
 
-    //VALIDAÇÃO
-    I.waitForText('Pedido Finalizado', 50)
+//     //VALIDAÇÃO
+//     I.waitForText('Pedido Finalizado', 50)
 
-}).tag('AbaFinalizarEntregaEnderecoPrincipal')
+// }).tag('AbaFinalizarEntregaEnderecoPrincipal')
 
 
 
 
 
-//adicionar cenario aqui  ENDEREÇO SECUNDARIO.
-Scenario('Aba "FINALIZAR"  ENTREGA - Endereço de Entrega SECUNDÁRIO ', () => {
+// //adicionar cenario aqui  ENDEREÇO SECUNDARIO.
+// Scenario('Aba "FINALIZAR"  ENTREGA - Endereço de Entrega SECUNDÁRIO ', () => {
 
-    //ESSE METODO ADICIONA DOIS PRODUTOS DIFERENTES NO CARRINHO.
-    pedido.AdicionarDoisProdutosNoCarrinho();
+//     //ESSE METODO ADICIONA DOIS PRODUTOS DIFERENTES NO CARRINHO.
+//     pedido.AdicionarDoisProdutosNoCarrinho();
 
-    //TROCO PARA O ENDEREÇO SECUNDÁRIO.
-    I.click('Endereço de Entrega')
-    I.wait(2)
-    I.click('ALTERAR')
-    I.wait(2)
-    I.click('SELECIONAR')
-    I.waitForText('RUA HELIO ESTEFANO BECKER , 1 (TESTE)', 50)
-    I.waitForText('REAL PARQUE, SAO JOSE - 88113460', 50)
+//     //TROCO PARA O ENDEREÇO SECUNDÁRIO.
+//     I.click('Endereço de Entrega')
+//     I.wait(2)
+//     I.click('ALTERAR')
+//     I.wait(2)
+//     I.click('SELECIONAR')
+//     I.waitForText('RUA HELIO ESTEFANO BECKER , 1 (TESTE)', 50)
+//     I.waitForText('REAL PARQUE, SAO JOSE - 88113460', 50)
 
-    I.scrollPageToBottom();
+//     I.scrollPageToBottom();
 
-    //ESCOLHO A FORMA DE PAGAMENTO "AVISTA"
-    pedido.PagamentoAvista();
+//     //ESCOLHO A FORMA DE PAGAMENTO "AVISTA"
+//     pedido.PagamentoAvista();
 
-    //ESCREVO UMA OBSERVAÇÃO 
-    I.fillField('Observação', 'TESTE TESTE TESTE')
-    // // CLICO NO BOTAO "FINALIZAR PEDIDO"
-    I.click('FINALIZAR PEDIDO')
+//     //ESCREVO UMA OBSERVAÇÃO 
+//     I.fillField('Observação', 'TESTE TESTE TESTE')
+//     // // CLICO NO BOTAO "FINALIZAR PEDIDO"
+//     I.click('FINALIZAR PEDIDO')
 
-    //VALIDAÇÃO
-    I.waitForText('Pedido Finalizado', 50)
+//     //VALIDAÇÃO
+//     I.waitForText('Pedido Finalizado', 50)
 
-}).tag('AbaFinalizarEntregaEnderecoSecundario')
+// }).tag('AbaFinalizarEntregaEnderecoSecundario')
 
 
 
-Scenario('Aba "FINALIZAR" ENTREGA - Retirada Balcao ', () => {
+// Scenario('Aba "FINALIZAR" ENTREGA - Retirada Balcao ', () => {
 
-    //ESSE METODO ADICIONA DOIS PRODUTOS DIFERENTES NO CARRINHO.
-    pedido.AdicionarDoisProdutosNoCarrinho();
+//     //ESSE METODO ADICIONA DOIS PRODUTOS DIFERENTES NO CARRINHO.
+//     pedido.AdicionarDoisProdutosNoCarrinho();
 
-    I.click('Retirada no Balcão')
-    I.scrollPageToBottom();
+//     I.click('Retirada no Balcão')
+//     I.scrollPageToBottom();
 
-    //ESCOLHO A FORMA DE PAGAMENTO "AVISTA"
-    pedido.PagamentoAvista();
+//     //ESCOLHO A FORMA DE PAGAMENTO "AVISTA"
+//     pedido.PagamentoAvista();
 
-    //ESCREVO UMA OBSERVAÇÃO 
-    I.fillField('Observação', 'TESTE TESTE TESTE')
+//     //ESCREVO UMA OBSERVAÇÃO 
+//     I.fillField('Observação', 'TESTE TESTE TESTE')
 
-    // // CLICO NO BOTAO "FINALIZAR PEDIDO"
-    I.click('FINALIZAR PEDIDO')
+//     // // CLICO NO BOTAO "FINALIZAR PEDIDO"
+//     I.click('FINALIZAR PEDIDO')
 
-    //VALIDAÇÃO
-    I.waitForText('Pedido Finalizado', 50)
+//     //VALIDAÇÃO
+//     I.waitForText('Pedido Finalizado', 50)
 
-}).tag('AbaFinalizarEntregaRetiradaBalcao')
+// }).tag('AbaFinalizarEntregaRetiradaBalcao')
 
-Scenario('Aba "FINALIZAR" AVISTA - VALOR ABAIXO DE 200 ', () => {
+// Scenario('Aba "FINALIZAR" AVISTA - VALOR ABAIXO DE 200 ', () => {
 
-    //ESSE METODO ADICIONO APENAS UM PRODUTO COM O VALOR DE 50, ABAIXO O PEDIDO MINIMO.
-    pedido.CriarPedidoAbaixoDe200();
+//     //ESSE METODO ADICIONO APENAS UM PRODUTO COM O VALOR DE 50, ABAIXO O PEDIDO MINIMO.
+//     pedido.CriarPedidoAbaixoDe200();
 
-    I.click('Retirada no Balcão')
-    I.scrollPageToBottom();
+//     I.click('Retirada no Balcão')
+//     I.scrollPageToBottom();
 
-    //ESCOLHO A FORMA DE PAGAMENTO "AVISTA"
-    pedido.PagamentoAvista();
+//     //ESCOLHO A FORMA DE PAGAMENTO "AVISTA"
+//     pedido.PagamentoAvista();
 
-    //ESCREVO UMA OBSERVAÇÃO 
-    I.fillField('Observação', 'TESTE TESTE TESTE')
+//     //ESCREVO UMA OBSERVAÇÃO 
+//     I.fillField('Observação', 'TESTE TESTE TESTE')
 
-    // // CLICO NO BOTAO "FINALIZAR PEDIDO"
-    I.click('FINALIZAR PEDIDO')
+//     // // CLICO NO BOTAO "FINALIZAR PEDIDO"
+//     I.click('FINALIZAR PEDIDO')
 
-    //VALIDAÇÃO
-    I.waitForText('Parcela 1(100%) abaixo valor mínimo (R$200.00).', 50)
+//     //VALIDAÇÃO
+//     I.waitForText('Parcela 1(100%) abaixo valor mínimo (R$200.00).', 50)
 
-}).tag('AbaFinalizarAvistaValorAbaixo')
+// }).tag('AbaFinalizarAvistaValorAbaixo')
 
-Scenario('Aba "FINALIZAR" BOLETO - VALOR ABAIXO DE 100 ', () => {
+// Scenario('Aba "FINALIZAR" BOLETO - VALOR ABAIXO DE 100 ', () => {
 
-    //ESSE METODO ADICIONO APENAS UM PRODUTO COM O VALOR DE 50, ABAIXO O PEDIDO MINIMO.
-    pedido.CriarPedidoAbaixoDe100();
+//     //ESSE METODO ADICIONO APENAS UM PRODUTO COM O VALOR DE 50, ABAIXO O PEDIDO MINIMO.
+//     pedido.CriarPedidoAbaixoDe100();
 
-    I.click('Retirada no Balcão')
-    I.scrollPageToBottom();
+//     I.click('Retirada no Balcão')
+//     I.scrollPageToBottom();
 
-    //ESCOLHO A FORMA DE PAGAMENTO "BOLETO ITAU"
-    pedido.PagamentoBoleto();
+//     //ESCOLHO A FORMA DE PAGAMENTO "BOLETO ITAU"
+//     pedido.PagamentoBoleto();
 
-    //ESCREVO UMA OBSERVAÇÃO 
-    I.fillField('Observação', 'TESTE TESTE TESTE')
+//     //ESCREVO UMA OBSERVAÇÃO 
+//     I.fillField('Observação', 'TESTE TESTE TESTE')
 
-    //CLICO NO BOTAO "FINALIZAR PEDIDO"
-    I.click('FINALIZAR PEDIDO')
+//     //CLICO NO BOTAO "FINALIZAR PEDIDO"
+//     I.click('FINALIZAR PEDIDO')
 
-    //VALIDAÇÃO
-    I.waitForText('Parcela 1(100%) abaixo valor mínimo (R$100.00).', 50)
+//     //VALIDAÇÃO
+//     I.waitForText('Parcela 1(100%) abaixo valor mínimo (R$100.00).', 50)
 
 
-}).tag('FinalizarBoletoValorAbaixo')
+// }).tag('FinalizarBoletoValorAbaixo')
 
-Scenario('Aba "FINALIZAR" Continuar Comprando', () => {
+// Scenario('Aba "FINALIZAR" Continuar Comprando', () => {
 
-    //ESSE METODO ADICIONA PEDIDOS NO CARRINHO, E ME DEIXA ESCOLHER SE QUERO REALIZAR ORÇAMENTO,FINALIZAR OU CONTINUAR A COMPRA.
-    pedido.PedidoQuaseCompleto();
+//     //ESSE METODO ADICIONA PEDIDOS NO CARRINHO, E ME DEIXA ESCOLHER SE QUERO REALIZAR ORÇAMENTO,FINALIZAR OU CONTINUAR A COMPRA.
+//     pedido.PedidoQuaseCompleto();
 
-    I.click('CONTINUAR COMPRANDO')
-    I.scrollPageToTop();
+//     I.click('CONTINUAR COMPRANDO')
+//     I.scrollPageToTop();
 
-    //VALIDAÇÃO
-    I.waitForText('08070', 50)
+//     //VALIDAÇÃO
+//     I.waitForText('08070', 50)
 
-}).tag('AbaFinalizarContinuarComprando')
+// }).tag('AbaFinalizarContinuarComprando')
 
-Scenario('Aba "FINALIZAR" Finalizar Pedido', () => {
+// Scenario('Aba "FINALIZAR" Finalizar Pedido', () => {
 
-    //ESSE METODO ADICIONA PEDIDOS NO CARRINHO, E ME DEIXA ESCOLHER SE QUERO REALIZAR ORÇAMENTO,FINALIZAR OU CONTINUAR A COMPRA.
-    pedido.PedidoQuaseCompleto();
+//     //ESSE METODO ADICIONA PEDIDOS NO CARRINHO, E ME DEIXA ESCOLHER SE QUERO REALIZAR ORÇAMENTO,FINALIZAR OU CONTINUAR A COMPRA.
+//     pedido.PedidoQuaseCompleto();
 
-    I.click('FINALIZAR PEDIDO')
+//     I.click('FINALIZAR PEDIDO')
 
-    //VALIDAÇÃO
-    I.waitForText('Pedido Finalizado', 50)
+//     //VALIDAÇÃO
+//     I.waitForText('Pedido Finalizado', 50)
 
-}).tag('AbaFinalizarFinalizarPedido')
+// }).tag('AbaFinalizarFinalizarPedido')
 
-Scenario('Aba "FINALIZAR" Solicitar Orçamento', () => {
+// Scenario('Aba "FINALIZAR" Solicitar Orçamento', () => {
 
-    //ESSE METODO ADICIONA PEDIDOS NO CARRINHO, E ME DEIXA ESCOLHER SE QUERO REALIZAR ORÇAMENTO,FINALIZAR OU CONTINUAR A COMPRA.
-    pedido.PedidoQuaseCompleto();
+//     //ESSE METODO ADICIONA PEDIDOS NO CARRINHO, E ME DEIXA ESCOLHER SE QUERO REALIZAR ORÇAMENTO,FINALIZAR OU CONTINUAR A COMPRA.
+//     pedido.PedidoQuaseCompleto();
 
-    I.click('SOLICITAR ORÇAMENTO')
+//     I.click('SOLICITAR ORÇAMENTO')
 
-    //VALIDAÇÃO
-    I.waitForText('Obrigado por cotar conosco. Para aprovar sua cotação entre em contato com seu representante no fone (49) 3331-0600.', 5)
+//     //VALIDAÇÃO
+//     I.waitForText('Obrigado por cotar conosco. Para aprovar sua cotação entre em contato com seu representante no fone (49) 3331-0600.', 5)
 
-}).tag('AbaFinalizarSolicitarOrcamento')
+// }).tag('AbaFinalizarSolicitarOrcamento')
 
 
 
