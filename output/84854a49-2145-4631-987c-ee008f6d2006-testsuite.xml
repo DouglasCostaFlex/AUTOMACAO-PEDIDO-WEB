@@ -1,0 +1,140 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1690893993871' stop='1690894018238'>
+    <name>E-commerce apenas orçamento @EcommerceOrcamento:</name>
+    <title>E-commerce apenas orçamento @EcommerceOrcamento:</title>
+    <test-cases>
+        <test-case start='1690894004132' status='passed' stop='1690894018162'>
+            <name>E-Commerce com Flag apenas Orçamento</name>
+            <title>E-Commerce com Flag apenas Orçamento</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@EcommerceOrcamento'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1690894004154' status='passed' stop='1690894004373'>
+                    <name>I am on page "https://192.168.1.236:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.236:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894004374' status='passed' stop='1690894004520'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894004521' status='passed' stop='1690894004598'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894004598' status='passed' stop='1690894004709'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894004710' status='passed' stop='1690894004834'>
+                    <name>I click "Ir para 192.168.1.236 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.236 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894004834' status='passed' stop='1690894005671'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894005671' status='passed' stop='1690894005837'>
+                    <name>I fill field "CNPJ", "23.928.274/0001-40"</name>
+                    <title>I fill field "CNPJ", "23.928.274/0001-40"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894005837' status='passed' stop='1690894005955'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894005955' status='passed' stop='1690894006025'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894006025' status='passed' stop='1690894008864'>
+                    <name>I wait for text "08070", 20</name>
+                    <title>I wait for text "08070", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894008865' status='passed' stop='1690894009095'>
+                    <name>I am on page "https://192.168.1.236:9090/pedidoweb/user/produtoDetalhesCarroussel/6458"</name>
+                    <title>I am on page "https://192.168.1.236:9090/pedidoweb/user/produtoDetalhesCarroussel/6458"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894009095' status='passed' stop='1690894010647'>
+                    <name>I wait for text "08070", 20</name>
+                    <title>I wait for text "08070", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894010647' status='passed' stop='1690894010782'>
+                    <name>I fill field "Quantidade", "50"</name>
+                    <title>I fill field "Quantidade", "50"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894010782' status='passed' stop='1690894010804'>
+                    <name>I dont see element "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/div/div", 5</name>
+                    <title>I dont see element "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/div/div", 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894010804' status='passed' stop='1690894015810'>
+                    <name>I wait 5</name>
+                    <title>I wait 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894015810' status='passed' stop='1690894015977'>
+                    <name>I am on page "https://192.168.1.236:9090/pedidoweb/user/carrinho"</name>
+                    <title>I am on page "https://192.168.1.236:9090/pedidoweb/user/carrinho"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894015977' status='passed' stop='1690894017035'>
+                    <name>I wait for text "08070", 10</name>
+                    <title>I wait for text "08070", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894017035' status='passed' stop='1690894017047'>
+                    <name>I scroll page to bottom </name>
+                    <title>I scroll page to bottom </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894017047' status='passed' stop='1690894017124'>
+                    <name>I click "SOLICITAR ORÇAMENTO"</name>
+                    <title>I click "SOLICITAR ORÇAMENTO"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1690894017125' status='passed' stop='1690894018162'>
+                    <name>I wait for text "Orçamento solicitado com sucesso", 20</name>
+                    <title>I wait for text "Orçamento solicitado com sucesso", 20</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

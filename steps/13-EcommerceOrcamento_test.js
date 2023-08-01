@@ -34,7 +34,7 @@ Before(() => {
 })
 
 
-Scenario('E-Commerce com Flag apenas Orçamento', () => {
+Scenario('E-Commerce com Flag apenas Orçamento', async () => {
 
     // DESATIVO O CLIENTE
     client.query("update cliente set fl_ecommerce  = '1' where cd_cliente = '51668'")
@@ -75,6 +75,7 @@ Scenario('E-Commerce com Flag apenas Orçamento', () => {
     //ESPERO PELA MENSAGEM "ORÇAMENTO SOLICITAR COM SUCESSO"
     I.waitForText('Orçamento solicitado com sucesso', 20)
 
+    await AbrirAllure();
 
 });
 
