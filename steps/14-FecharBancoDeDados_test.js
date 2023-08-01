@@ -23,14 +23,14 @@ Scenario('Encerrar conexão com o banco ', async () => {
             });
     });
 
-   
-
-})
-
- //ABRO O REPORTER
+    //ABRO O REPORTER
  await AbrirAllure();
     
  //ENCERRO O PROGRAMA.
  await process.exit(0);
+
+})
+
+
 
  
