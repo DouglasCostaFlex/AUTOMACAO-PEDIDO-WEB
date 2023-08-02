@@ -71,7 +71,7 @@ Scenario('Cliente Inativo', () => {
 AfterSuite(() => {
 
     tryTo(() => {
-
+ 
         // ATIVO O CLIENTE
         client.query("UPDATE CLIENTE SET FL_ATIVO = 'S' WHERE cd_cliente = '51668';")
             .then((result) => {
