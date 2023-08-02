@@ -103,7 +103,9 @@ Scenario('E-Commerce com Flag apenas Orçamento', () => {
     //ESPERO PELA MENSAGEM "ORÇAMENTO SOLICITAR COM SUCESSO"
     I.waitForText('Orçamento solicitado com sucesso', 50)
 
-
+    I.amOnPage('file:///C:/Users/flexmobile/Documents/GitHub/AUTOMACAOLOJA/AUTOMACAO-PEDIDO-WEB/mochawesome-report/mochawesome.html')
+    I.wait(10)
+    I.saveScreenshot('Resultado.png')
 });
 
 
@@ -117,7 +119,6 @@ After(() => {
         .catch((err) => {
             console.error('Erro ao trocar para Trocado para Pedido/orçamento:', err);
         })
-
 
     // //ABRO O REPORTER
     // AbrirAllure();

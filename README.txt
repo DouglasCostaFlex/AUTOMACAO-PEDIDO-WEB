@@ -17,3 +17,4 @@ no cmd do rode o comando  allure serve C:\Users\flexmobile\Desktop\LOJA\output  
 e rode o comando  npx codeceptjs run --steps na automaçao    <<-- Quando finalizar vai estar no server do allure;.
 
 ----------------------------------------------------------------
+file:///C:/Users/flexmobile/Documents/GitHub/AUTOMACAOLOJA/AUTOMACAO-PEDIDO-WEB/mochawesome-report/mochawesome.html
