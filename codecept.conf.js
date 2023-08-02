@@ -27,7 +27,7 @@ exports.config = {
   output: './output',
   helpers: {
     WebDriver: {
-      url: 'https://192.168.1.107:9097/pedidoweb/login',
+      url: 'https://192.168.1.236:9090/pedidoweb/login',
       browser: 'chrome',
       restart: false,
       autoGrantPermissions: true,
