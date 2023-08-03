@@ -93,7 +93,7 @@ AfterSuite(() => {
             })
     })
 
-    I.amOnPage('C:\ProgramData\Jenkins\.jenkins\workspace\AUTOMACAOWEB-127\mochawesome-report\mochawesome.html')
+    I.amOnPage('C:/ProgramData/Jenkins/.jenkins/workspace/AUTOMACAOWEB-127/mochawesome-report/mochawesome.html')
     I.wait(50)
     I.saveScreenshot('Relatorio.png')
     // AbrirAllure();
