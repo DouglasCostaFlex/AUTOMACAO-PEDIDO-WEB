@@ -104,6 +104,8 @@ Scenario('E-Commerce com Flag apenas Orçamento', async () => {
     I.waitForText('Orçamento solicitado com sucesso', 50)
 
     await AbrirAllure();
+
+ 
 });
 
 

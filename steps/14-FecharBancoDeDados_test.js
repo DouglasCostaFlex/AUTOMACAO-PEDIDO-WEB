@@ -21,8 +21,11 @@ Scenario('Encerrar conexão com o banco ', async () => {
         .catch((err) => {
             console.error('Erro ao fechar a conexão com o banco de dados:', err);
         });
+
+
     
-        
+
+
     //ENCERRO O PROGRAMA.
     await process.exit(0);
 })
