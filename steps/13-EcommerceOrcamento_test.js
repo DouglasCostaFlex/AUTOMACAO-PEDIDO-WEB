@@ -75,7 +75,7 @@ Scenario('E-Commerce com Flag apenas Orçamento', async () => {
     //ESPERO PELA MENSAGEM "ORÇAMENTO SOLICITAR COM SUCESSO"
     I.waitForText('Orçamento solicitado com sucesso', 20)
 
-        
+
 });
 
 
@@ -93,9 +93,6 @@ AfterSuite(() => {
             })
     })
 
-    I.amOnPage('C:/ProgramData/Jenkins/.jenkins/workspace/AUTOMACAOWEB-127/mochawesome-report/mochawesome.html')
-    I.wait(50)
-    I.saveScreenshot('Relatorio.png')
-    // AbrirAllure();
+    AbrirAllure();
 
 });
