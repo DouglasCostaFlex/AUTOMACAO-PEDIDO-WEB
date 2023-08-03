@@ -23,6 +23,7 @@ Scenario('Encerrar conexão com o banco ', async () => {
             });
     });
 
+    await AbrirAllure();
     await process.exit();
 
 })
