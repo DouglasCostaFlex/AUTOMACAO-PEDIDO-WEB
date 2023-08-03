@@ -75,7 +75,7 @@ Scenario('Aba "Inicial" ', () => {
 Scenario('Aba "Inicial" Histórico - Pedidos já Comprados.', () => {
 
     //CASO A ABA "FILTROS" ESTEJA FECHADO, IRÁ ABRIR.
-    tryTo(() => I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/mat-toolbar/button'))
+    tryTo(() => I.click({xpath: '/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/mat-toolbar/button'}))
 
     //CLICO NA FLAG "ITENS JA COMPRADOS"
     I.click('ITENS JÁ COMPRADOS')
@@ -99,7 +99,7 @@ Scenario('Aba "Inicial" Histórico - Pedidos já Comprados.', () => {
 Scenario('Aba "Inicial" Filtros ', () => {
 
     //CASO A ABA "FILTROS" ESTEJA FECHADO, IRÁ ABRIR.
-    tryTo(() => I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/mat-toolbar/button'))
+    tryTo(() => I.click({xpath: '/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/produtos-component/mat-sidenav-container/mat-sidenav-content/mat-toolbar/button'}))
 
     //CLICO NA FLAG "PROMOÇÃO"
     I.click('PROMOÇÃO')

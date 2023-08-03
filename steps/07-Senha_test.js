@@ -50,7 +50,7 @@ Before(() => {
 Scenario('Trocar Senha', () => {
 
     //CLICO PRA ABRIR O MENU PARA ALTERAR A SENHA
-    I.click('/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button')
+    I.click({xpath: '/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button'})
     I.click('ALTERAR')
     I.fillField('Senha Antiga','48303523')
     I.fillField('Senha Nova','Flex48303523')
@@ -64,7 +64,7 @@ Scenario('Trocar Senha', () => {
     I.waitForText('08070', 50)
 
     //CLICO PRA ABRIR O MENU PARA ALTERA A SENHA PARA A ANTERIOR 
-    I.click('/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button')
+    I.click({xpath: '/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button'})
     I.click('ALTERAR')
     I.fillField('Senha Antiga','Flex48303523')
     I.fillField('Senha Nova','48303523')

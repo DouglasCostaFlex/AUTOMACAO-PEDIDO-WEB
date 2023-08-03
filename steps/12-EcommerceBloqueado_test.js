@@ -55,14 +55,14 @@ Scenario('E-Commerce Com flag Bloqueado', () => {
 
 AfterSuite(() => {
 
-        // ATIVO O CLIENTE
-        client.query("update cliente set fl_ecommerce  = '2' where cd_cliente = '51668'")
-            .then((result) => {
-                console.log(' Trocado para Pedido/orçamento')
-            })
-            .catch((err) => {
-                console.error('Erro ao trocar para Trocado para Pedido/orçamento:', err);
-            })
-   
+    // ATIVO O CLIENTE
+    client.query("update cliente set fl_ecommerce  = '2' where cd_cliente = '51668'")
+        .then((result) => {
+            console.log(' Trocado para Pedido/orçamento')
+        })
+        .catch((err) => {
+            console.error('Erro ao trocar para Trocado para Pedido/orçamento:', err);
+        })
+
 
 });

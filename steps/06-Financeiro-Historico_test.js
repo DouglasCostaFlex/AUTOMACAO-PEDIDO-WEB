@@ -54,7 +54,7 @@ Scenario('Aba "Financeiro" Detalhes ', () => {
     I.waitForText('DETALHES',50)
 
     //CLICO EM "DETALHES"
-    I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/historico-financeiro/div/mat-table/mat-row[1]/mat-cell[6]/a')
+    I.click({xpath: '/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/historico-financeiro/div/mat-table/mat-row[1]/mat-cell[6]/a'})
 
     //ESPERO PELAS MENSAGENS
     I.waitForText('Detalhes',20)

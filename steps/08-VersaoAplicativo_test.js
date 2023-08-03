@@ -48,7 +48,7 @@ Before(() => {
 Scenario('Versao Aplicativo ', () => {
 
     //CLICO NO MENU 
-    I.click('/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button')
+    I.click({xpath: '/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button'});
     
     //CLICO EM "VERSAO MÓVEL"
     I.click('VERSÃO MÓVEL')

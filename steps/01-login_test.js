@@ -68,7 +68,7 @@ Scenario('Aba "Já Sou cliente" ', () => {
 
 
   //EU VOU PARA PAGINA "JÁ SOU CLIENTE"
-  I.click('/html/body/my-app/login-component/div/div[1]/div/form/div[2]/button[1]')
+  I.click({xpath: '/html/body/my-app/login-component/div/div[1]/div/form/div[2]/button[1]'})
 
   //EU PREENCHO OS CAMPOS COM OS DADOS
   I.fillField('Razão Social', Razao_Social)
