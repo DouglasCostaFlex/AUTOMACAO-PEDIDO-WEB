@@ -1,0 +1,93 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1691070539846' stop='1691070549314'>
+    <name>Versao Aplicativo @VersaoAplicativo:</name>
+    <title>Versao Aplicativo @VersaoAplicativo:</title>
+    <test-cases>
+        <test-case start='1691070539847' status='passed' stop='1691070549176'>
+            <name>Versao Aplicativo @VersaoAplicativo</name>
+            <title>Versao Aplicativo @VersaoAplicativo</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@VersaoAplicativo'/>
+                <label name='tag' value='@VersaoAplicativo'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1691070539850' status='passed' stop='1691070540113'>
+                    <name>I am on page "https://192.168.1.236:9090/pedidoweb/login"</name>
+                    <title>I am on page "https://192.168.1.236:9090/pedidoweb/login"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1691070540113' status='passed' stop='1691070540236'>
+                    <name>I resize window 1920, 1080</name>
+                    <title>I resize window 1920, 1080</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1691070540236' status='failed' stop='1691070541239'>
+                    <name>I wait for text "Avançado"</name>
+                    <title>I wait for text "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1691070541240' status='failed' stop='1691070541284'>
+                    <name>I click "Avançado"</name>
+                    <title>I click "Avançado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1691070541284' status='failed' stop='1691070541382'>
+                    <name>I click "Ir para 192.168.1.236 (não seguro)"</name>
+                    <title>I click "Ir para 192.168.1.236 (não seguro)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1691070541382' status='passed' stop='1691070541411'>
+                    <name>I wait for text "CNPJ"</name>
+                    <title>I wait for text "CNPJ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1691070541411' status='passed' stop='1691070541513'>
+                    <name>I fill field "CNPJ", "00409260000115"</name>
+                    <title>I fill field "CNPJ", "00409260000115"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1691070541513' status='passed' stop='1691070541608'>
+                    <name>I fill field "Senha", *****</name>
+                    <title>I fill field "Senha", *****</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1691070541608' status='passed' stop='1691070541653'>
+                    <name>I click "LOGIN"</name>
+                    <title>I click "LOGIN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1691070541653' status='passed' stop='1691070544210'>
+                    <name>I wait for text "08070", 10</name>
+                    <title>I wait for text "08070", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1691070544212' status='passed' stop='1691070546485'>
+                    <name>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button"</name>
+                    <title>I click "/html/body/my-app/home-component/mat-toolbar/mat-toolbar-row[1]/button"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1691070546485' status='passed' stop='1691070549176'>
+                    <name>I click "VERSÃO MÓVEL"</name>
+                    <title>I click "VERSÃO MÓVEL"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
