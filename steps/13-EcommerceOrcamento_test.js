@@ -79,7 +79,6 @@ Scenario('E-Commerce com Flag apenas Orçamento', async () => {
 
 });
 
-
 AfterSuite(() => {
 
     tryTo(() => {
@@ -93,7 +92,5 @@ AfterSuite(() => {
                 console.error('Erro ao trocar para Trocado para Pedido/orçamento:', err);
             })
     })
-
-  
 
 });
