@@ -93,6 +93,9 @@ AfterSuite(() => {
             })
     })
 
-    AbrirAllure();
+    I.amOnPage('file:///C:/Users/flexmobile/Documents/GitHub/AUTOMACAOLOJA/AUTOMACAO-PEDIDO-WEB/mochawesome-report/mochawesome.html')
+    I.wait(50)
+    I.saveScreenshot('Relatorio.png')
+    // AbrirAllure();
 
 });
