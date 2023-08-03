@@ -2,7 +2,7 @@
 const { I } = inject()
 const { exec } = require('child_process');
 const { exit } = require('process');
-const allureServeCommand = 'allure serve C:\ProgramData\Jenkins\.jenkins\workspace\AUTOMACAOWEB-DEVELOP\output';
+const allureServeCommand = 'allure serve "C:/Users/flexmobile/Documents/GitHub/AUTOMACAOLOJA/AUTOMACAO-PEDIDO-WEB/output"';
 
 
 module.exports = {
