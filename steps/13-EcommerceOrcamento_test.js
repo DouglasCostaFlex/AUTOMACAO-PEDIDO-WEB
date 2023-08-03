@@ -75,7 +75,7 @@ Scenario('E-Commerce com Flag apenas Orçamento', async () => {
     //ESPERO PELA MENSAGEM "ORÇAMENTO SOLICITAR COM SUCESSO"
     I.waitForText('Orçamento solicitado com sucesso', 20)
     
-     
+    await AbrirAllure();
 });
 
 AfterSuite(() => {
