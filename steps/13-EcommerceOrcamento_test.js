@@ -62,7 +62,7 @@ Before(() => {
 })
 
 
-Scenario('E-Commerce com Flag apenas Orçamento', () => {
+Scenario('E-Commerce com Flag apenas Orçamento', async () => {
 
     // DESATIVO O CLIENTE
     client.query("update cliente set fl_ecommerce  = '1' where cd_cliente = '51668'")
@@ -103,7 +103,7 @@ Scenario('E-Commerce com Flag apenas Orçamento', () => {
     //ESPERO PELA MENSAGEM "ORÇAMENTO SOLICITAR COM SUCESSO"
     I.waitForText('Orçamento solicitado com sucesso', 50)
 
-
+    await AbrirAllure();
 });
 
 
@@ -118,7 +118,6 @@ After(() => {
             console.error('Erro ao trocar para Trocado para Pedido/orçamento:', err);
         })
 
-    // //ABRO O REPORTER
-    AbrirAllure();
+  
 
 });
