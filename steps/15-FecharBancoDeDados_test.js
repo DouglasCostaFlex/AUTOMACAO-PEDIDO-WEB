@@ -24,6 +24,7 @@ Scenario('Encerrar conexão com o banco ', async () => {
     });
 
    
+   
     await process.exit();
 
 })

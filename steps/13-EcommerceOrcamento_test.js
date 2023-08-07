@@ -9,7 +9,7 @@ const CNPJ_CORRETO = '23.928.274/0001-40'
 const SENHA_CORRETA = '48303523'
 
 const { Client } = require('pg');
-const { AbrirAllure } = require("../pages/AbrirAllure");
+
 
 const client = new Client({
     user: 'flextotal',
@@ -75,7 +75,7 @@ Scenario('E-Commerce com Flag apenas Orçamento', async () => {
     //ESPERO PELA MENSAGEM "ORÇAMENTO SOLICITAR COM SUCESSO"
     I.waitForText('Orçamento solicitado com sucesso', 20)
     
-    await AbrirAllure();
+
 });
 
 AfterSuite(() => {
