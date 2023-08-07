@@ -69,6 +69,7 @@ Scenario('Aba "FINALIZAR"  ENTREGA - Endereço de Entrega PRINCIPAL ', () => {
     //ESSE METODO ADICIONA DOIS PRODUTOS DIFERENTES NO CARRINHO.
     pedido.AdicionarDoisProdutosNoCarrinho();
 
+    I.waitForText('Endereço de Entrega',30)
     I.click('Endereço de Entrega')
     I.scrollPageToBottom();
 
@@ -96,6 +97,7 @@ Scenario('Aba "FINALIZAR"  ENTREGA - Endereço de Entrega SECUNDÁRIO ', () => {
     pedido.AdicionarDoisProdutosNoCarrinho();
 
     //TROCO PARA O ENDEREÇO SECUNDÁRIO.
+    I.waitForText('Endereço de Entrega',30)
     I.click('Endereço de Entrega')
     I.wait(2)
     I.click('ALTERAR')

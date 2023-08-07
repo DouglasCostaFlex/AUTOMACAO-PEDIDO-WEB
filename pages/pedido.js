@@ -114,7 +114,7 @@ module.exports = {
     //ESCOLHO A FORMA DE PAGAMENTO "AVISTA"
     I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/carrinho-component/div/div[2]/div[1]/div[1]/mat-form-field[1]/div/div[1]/div/mat-select')
     I.wait(4)
-    I.click(xpath:{'/html/body/div[2]/div[2]/div/div/mat-option[5]'});
+    I.click({ xpath: '/html/body/div[2]/div[2]/div/div/mat-option[5]'});
     I.wait(4)
 
   },
@@ -123,7 +123,7 @@ module.exports = {
     I.wait(4)
     I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/carrinho-component/div/div[2]/div[1]/div[1]/mat-form-field[1]/div/div[1]/div/mat-select')
     I.wait(4)
-    I.click('COPIA 103')
+    I.click({xpath: "/html/body/div[2]/div[2]/div/div/mat-option[4]"})
     I.wait(4)
 
 
