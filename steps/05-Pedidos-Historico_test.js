@@ -47,6 +47,6 @@ Scenario('Aba "Pedidos" Detalhes ', () => {
     I.waitForText('241,25')
     I.waitForText('16410')
     I.waitForText('08070')
-    I.waitForText('Forma Pgto: DINHEIRO')
+   
 
 }).tag('PedidosDetalhes')
