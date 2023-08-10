@@ -48,7 +48,7 @@ Before(() => {
 })
 
 
-Scenario('Controle de crédito Avista', () => {
+Scenario('Controle de crédito Avista',  () => {
 
     // DESATIVO O CLIENTE
     client.query(" update cliente set fl_situacao_credito = '1' where cd_cliente = '51668'")
@@ -71,17 +71,20 @@ Scenario('Controle de crédito Avista', () => {
 
     //ESPERO PELO VALOR NO CARRINHO
     I.waitForText('230,86', 20)
+    I.click('FINALIZAR PEDIDO')
 
     //VOU PARA O CARRINHO
-    I.amOnPage(Pagina_Produto_08070_Wildfly1)
     I.waitForText('08070', 20)
-
+    I.refreshPage();
+    I.wait()
     //VOU PARA O FIM DA PÁGINA.
     I.scrollPageToBottom();
+    I.wait(5)
 
     //CLICO EM FINALIZAR PEDIDO E ESPERO PELO TEXTO "LIBERADO SOMENTE PARA COMPRAS Á VISTA."
+    I.waitForText('FINALIZAR PEDIDO', 10)
     I.click('FINALIZAR PEDIDO')
-    I.waitForText('Liberado somente para compras à vista.')
+    I.waitForText('Liberado somente para compras à vista.', 20)
 
 });
 
@@ -101,3 +104,8 @@ AfterSuite(() => {
     })
 
 });
+
+
+
+
+
