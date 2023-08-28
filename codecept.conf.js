@@ -35,6 +35,7 @@ exports.config = {
       resetOnSessionStartOnly: false
     }
   },
+  
   include: {
     I: './steps_file.js',
     loginPage: "./pages/Login.js",
@@ -45,6 +46,7 @@ exports.config = {
 
     linksExternosPage: "./pages/LinksExternos.js",
   },
+
   name: 'LOJA',
 
   plugins: {
