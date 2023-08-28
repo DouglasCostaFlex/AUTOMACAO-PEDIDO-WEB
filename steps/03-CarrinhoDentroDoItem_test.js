@@ -2,7 +2,7 @@ Feature('Carrinho Dentro Do Item').tag('CarrinhoDentroDoItem');
 
 const { Pagina_Login_Wildfly1,
     Pagina_Produto_16410_Wildfly1,
-    Pagina_Historico_Pedido_Wildfly1 ,
+    Pagina_Historico_Pedido_Wildfly1,
     Pagina_Historico_Financeiro_Wildfly1,
     Pagina_Login_Wildfly2 = '',
     Pagina_Historico_Pedido_Wildfly2 = '',
@@ -28,7 +28,7 @@ const SENHA_CORRETA = '48303523'
 
 Before(() => {
 
-   
+
     // CASO ESTEJA FECHADO EU FAÇO O LOGIN
     tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
     I.waitForText('08070', 20)
@@ -53,7 +53,7 @@ Scenario('Aba "Carrinho" Dentro do item - Finalizar Pedido ', () => {
 
     //ADICIONO 4  ITEM POR QUANTIDADE 
     I.fillField('Quantidade', '4')
-    
+
     //VALIDAÇÃO
     I.waitForText('320,00', 5)
     I.waitForText('Vl. Total (IPI + ST + FCP): R$ 320,00', 5)

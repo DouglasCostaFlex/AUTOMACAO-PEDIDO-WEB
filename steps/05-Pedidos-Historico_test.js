@@ -2,7 +2,7 @@ Feature('Pedidos Historico').tag('PedidosHistorico');
 
 const { Pagina_Login_Wildfly1,
     Pagina_Produto_16410_Wildfly1,
-    Pagina_Historico_Pedido_Wildfly1 ,
+    Pagina_Historico_Pedido_Wildfly1,
     Pagina_Historico_Financeiro_Wildfly1,
     Pagina_Login_Wildfly2 = '',
     Pagina_Historico_Pedido_Wildfly2 = '',
@@ -24,16 +24,16 @@ const SENHA_CORRETA = '48303523'
 
 
 Before(() => {
- 
+
 
     // CASO ESTEJA FECHADO EU FAÇO O LOGIN
     tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
-    I.waitForText('08070',10)
+    I.waitForText('08070', 10)
 
 })
 
 Scenario('Aba "Pedidos" Detalhes ', () => {
-    
+
     //CLICO EM "PEDIDOS"
     I.wait(2)
     I.amOnPage(Pagina_Historico_Pedido_Wildfly1)
@@ -47,6 +47,6 @@ Scenario('Aba "Pedidos" Detalhes ', () => {
     I.waitForText('241,25')
     I.waitForText('16410')
     I.waitForText('08070')
-   
+
 
 }).tag('PedidosDetalhes')

@@ -2,7 +2,7 @@ Feature('Finalizar Pedido').tag('FinalizarPedido');
 
 const { Pagina_Login_Wildfly1,
     Pagina_Produto_16410_Wildfly1,
-    Pagina_Historico_Pedido_Wildfly1 ,
+    Pagina_Historico_Pedido_Wildfly1,
     Pagina_Historico_Financeiro_Wildfly1,
     Pagina_Login_Wildfly2 = '',
     Pagina_Historico_Pedido_Wildfly2 = '',
@@ -28,7 +28,7 @@ const SENHA_CORRETA = '48303523'
 
 Before(() => {
 
- 
+
     // CASO ESTEJA FECHADO EU FAÇO O LOGIN
     tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
     I.waitForText('08070', 10)
@@ -42,9 +42,9 @@ Scenario('Aba "FINALIZAR" Validar valores do carrinho ', () => {
     I.scrollPageToTop();
 
     // VALIDAÇÃO DOS VALORES E PRODUTO DO CARRINHO CONFORME OS PEDIDOS
-    I.waitForText('241,25',30)
-    I.waitForText('4,00',30)
-    I.waitForText('237,25',30)
+    I.waitForText('241,25', 30)
+    I.waitForText('4,00', 30)
+    I.waitForText('237,25', 30)
 
 
 
@@ -57,10 +57,10 @@ Scenario('Aba "FINALIZAR" Validar Remoção de um produto ', () => {
 
     //EU REMOVO O PRIMEIRO ITEM "17351 - ACABAMENTO MONOCOMANDO CHUVEIRO NEXUS 3/4POL CROMADO DOCOL"
     I.click('/html/body/my-app/home-component/mat-sidenav-container/mat-sidenav-content/div[1]/carrinho-component/div/ul/li[1]/div/div[2]/button')
-  
+
     //VALIDAÇÃO DOS VALORES E PRODUTO DO CARRINHO CONFORME FOI REMOVIDO 1 ITEM.
-    I.waitForText('Total: R$ 237,25',10)
-    I.waitForText('47,45',10)
+    I.waitForText('Total: R$ 237,25', 10)
+    I.waitForText('47,45', 10)
 
 }).tag('AbaFinalizarValidarRemocaoCarrinho')
 
@@ -69,7 +69,7 @@ Scenario('Aba "FINALIZAR"  ENTREGA - Endereço de Entrega PRINCIPAL ', () => {
     //ESSE METODO ADICIONA DOIS PRODUTOS DIFERENTES NO CARRINHO.
     pedido.AdicionarDoisProdutosNoCarrinho();
 
-    I.waitForText('Endereço de Entrega',30)
+    I.waitForText('Endereço de Entrega', 30)
     I.click('Endereço de Entrega')
     I.scrollPageToBottom();
 
@@ -97,14 +97,14 @@ Scenario('Aba "FINALIZAR"  ENTREGA - Endereço de Entrega SECUNDÁRIO ', () => {
     pedido.AdicionarDoisProdutosNoCarrinho();
 
     //TROCO PARA O ENDEREÇO SECUNDÁRIO.
-    I.waitForText('Endereço de Entrega',30)
+    I.waitForText('Endereço de Entrega', 30)
     I.click('Endereço de Entrega')
     I.wait(2)
     I.click('ALTERAR')
     I.wait(2)
     I.click('SELECIONAR')
-    I.waitForText('RUA HELIO ESTEFANO BECKER , 1 (TESTE)',5)
-    I.waitForText('REAL PARQUE, SAO JOSE - 88113460',5)
+    I.waitForText('RUA HELIO ESTEFANO BECKER , 1 (TESTE)', 5)
+    I.waitForText('REAL PARQUE, SAO JOSE - 88113460', 5)
 
     I.scrollPageToBottom();
 

@@ -2,7 +2,7 @@ Feature('Financeiro Historico').tag('FinanceiroHistorico');
 
 const { Pagina_Login_Wildfly1,
     Pagina_Produto_16410_Wildfly1,
-    Pagina_Historico_Pedido_Wildfly1 ,
+    Pagina_Historico_Pedido_Wildfly1,
     Pagina_Historico_Financeiro_Wildfly1,
     Pagina_Login_Wildfly2 = '',
     Pagina_Historico_Pedido_Wildfly2 = '',
@@ -24,17 +24,17 @@ const SENHA_CORRETA = '48303523'
 
 
 Before(() => {
-    
-  
+
+
     // CASO ESTEJA FECHADO EU FAÇO O LOGIN
     tryTo(() => Login(CNPJ_CORRETO, SENHA_CORRETA))
-    I.waitForText('08070',10)
+    I.waitForText('08070', 10)
 
 })
 
 Scenario('Aba "Financeiro" Detalhes ', () => {
-    
-    
+
+
     I.wait(2)
     //VOU PARA A ABA "FINANCEIRO"
     I.amOnPage(Pagina_Historico_Financeiro_Wildfly1)
@@ -57,6 +57,6 @@ Scenario('Aba "Financeiro" Detalhes ', () => {
     I.waitForText('Nosso número: 0000467475')
     I.waitForText('Número documento: 512034-1')
     I.waitForText('Valor saldo: R$ 0,00')
-   
+
 
 }).tag('FinanceiroDetalhes')

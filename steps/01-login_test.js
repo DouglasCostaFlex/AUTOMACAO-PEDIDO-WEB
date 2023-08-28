@@ -3,7 +3,7 @@ const { Login } = require("../pages/login_page");
 
 const { Pagina_Login_Wildfly1,
   Pagina_Produto_16410_Wildfly1,
-  Pagina_Historico_Pedido_Wildfly1 ,
+  Pagina_Historico_Pedido_Wildfly1,
   Pagina_Historico_Financeiro_Wildfly1,
   Pagina_Login_Wildfly2 = '',
   Pagina_Historico_Pedido_Wildfly2 = '',

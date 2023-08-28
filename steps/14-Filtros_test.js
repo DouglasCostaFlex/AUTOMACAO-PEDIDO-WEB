@@ -57,7 +57,7 @@ Scenario('Filtro por linha e subgrupo', async () => {
     I.waitForText('19895')
     I.click('SERRA')
     I.waitForText('17622')
-
+    
     await AbrirAllure();
 
 }).tag('LinhaESubgrupo')
