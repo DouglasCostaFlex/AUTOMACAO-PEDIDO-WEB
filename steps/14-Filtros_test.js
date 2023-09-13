@@ -51,8 +51,6 @@ Before(() => {
 
 Scenario('Filtro por linha e subgrupo', async () => {
 
-
-
     I.click('ABRASIVOS')
     I.waitForText('19895')
     I.click('SERRA')
